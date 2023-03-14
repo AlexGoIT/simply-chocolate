@@ -1,3 +1,50 @@
-body {
-  font-family: 'Monserrat', sans-serif;
+/* General styles */
+.section {
+  padding-top: 72px;
+}
+
+.container {
+  padding-inline: 20px;
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    width: 376px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 768px;
+    padding-inline: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 128px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+}
+
+/* Part hidden */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -37,4 +33,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-color-light-theme);
+  background-color: var(--body-background-color);
+}
+
+input,
+textarea {
+  outline: none;
 }
