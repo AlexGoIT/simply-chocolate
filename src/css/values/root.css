@@ -1,5 +1,32 @@
 /* Values */
 :root {
-  --font-color-light-theme: #111111;
-  --body-background-color: #FAFAFA;
+  /* Body */
+  --body-background-color: #fafafa;
+  /* Font color */
+  --text-color-light-theme: #111111;
+  --text-color-dark-themr: #ffffff;
+  --secondary-text-color-light-theme: rgba(17, 17, 17, 0.7);
+  --secondary-text-color-dark-theme: rgba(255, 255, 255, 0.7);
+  /* Card, Menu, Section Background color */
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #1e1823;
+  /* Icons */
+  --icon-color-normal-light-theme: #111111;
+  --icon-color-normal-dark-theme: #ffffff;
+  --icon-color-active: #fd9222;
+  --close_icon: linear-gradient(181.96deg, #f16529 1.64%, #d44528 98.35%);
+  /* Button Light Theme */
+  --button-bg-normal-light-theme: #fd9222;
+  --button-bg-active-light-theme: #fcf1e0;
+  --button-font-normal-light-theme: #ffffff;
+  --button-font-active-light-theme: #fd9222;
+  /* Button Dark Theme */
+  --button-border-normal-dark-theme: #ffffff;
+  --button-border-active-dark-theme: #fd9222;
+  /* Colors */
+  --black: #111111;
+  --darkpurple: #1e1823;
+  --orange: #fd9222;
+  --white: #fafafa;
+  --pink: #fcf1e0;
 }
