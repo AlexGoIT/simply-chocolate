@@ -1,5 +1,23 @@
 /* Values */
 :root {
-  --font-color-light-theme: #111111;
+  /* Body */
   --body-background-color: #FAFAFA;
+  /* Font color */
+  --font-color-light-theme: #111111;
+  --font-color-dark-themr: #FFFFFF;
+  /* Card, Menu, Section Background color */
+  --bg-color-light: #FFFFFF;
+  --bg-color-dark: #1E1823;
+  /* Icons */
+  --icon-color-normal-light-theme: #111111;
+  --icon-color-normal-dark-theme: #FFFFFF;
+  --icon-color-active: #FD9222;
+  /* Button Light Theme */
+  --button-bg-normal-light-theme: #FD9222;
+  --button-bg-active-light-theme: #FCF1E0;
+  --button-font-normal-light-theme: #FFFFFF;
+  --button-font-active-light-theme: #FD9222;
+  /* Button Dark Theme */
+  --button-border-normal-dark-theme: #FFFFFF;
+  --button-border-active-dark-theme: #FD9222;
 }

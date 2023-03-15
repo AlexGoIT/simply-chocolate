@@ -7,9 +7,9 @@
   padding-inline: 20px;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .container {
-    width: 376px;
+    width: 375px;
     margin-inline: auto;
   }
 }
