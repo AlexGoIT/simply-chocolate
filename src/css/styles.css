@@ -3,5 +3,5 @@
 @import url('./base/general.css');
 /* Sections styles */
 @import url('./layouts/header.css');
-
+@import url('./layouts/pop-up-feedback.css');
 @import url('./layouts/footer.css');
