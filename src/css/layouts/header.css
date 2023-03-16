@@ -50,8 +50,12 @@
         display: none;   
     }   
 }
-
-.text-header-hover{
+.text-header{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+.text-header-hover{   
     color: var(--orange);
 }
 .social-list{
@@ -97,7 +101,4 @@
         display: none;
     }
 }
-
-
-
 /*==========HEADER==========*/

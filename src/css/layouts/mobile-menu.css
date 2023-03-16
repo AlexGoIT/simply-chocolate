@@ -73,17 +73,23 @@
     margin-left: 30px;
     flex-grow: 1;
 }
+.menu-mobile-item{
+    position: relative; 
+}
 .menu-mobile-item:not(:last-child){
     padding-bottom: 24px;
 }
 .menu-mobile-link{
-    position: relative;
-    font-weight: 500;
     color: var(--text-color-dark-theme);
     transition: color var(--timing-function);  
 }
-.menu-mobile-link:hover,
-.menu-mobile-link:focus{
+.text-mobile-menu{
+    font-weight: 500;
+    line-height: 1.42;
+    letter-spacing: -0.02em; 
+}
+.text-mobile-menu:hover,
+.text-mobile-menu:focus{
     color: var(--orange);
 }
 .menu-mobile-link::after{
