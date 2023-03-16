@@ -62,7 +62,6 @@
         height: 14px;        
     }  
 }
-
 .btn-close-menu:hover > .close-icon-menu,
 .btn-close-menu:focus > .close-icon-menu{
     stroke: var(--icon-color-active);

@@ -30,7 +30,8 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.11;
-    letter-spacing: -0.03em;    
+    letter-spacing: -0.03em;
+    text-transform: uppercase;    
 }
 .logo-text-part-one{
     font-style: italic;   
@@ -41,6 +42,7 @@
 }
 .menu{
     display: flex;
+    align-items: center;
     gap: 24px;   
 }
 @media screen and (max-width:1199px) {
@@ -48,6 +50,7 @@
         display: none;   
     }   
 }
+
 .text-header-hover{
     color: var(--orange);
 }
