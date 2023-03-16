@@ -85,3 +85,88 @@ margin-bottom: 0;
         margin-bottom: 41px;
     }
 }
+
+
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 128px;
+    }
+
+    .advantages {
+        padding-top: 59px;
+        
+    }
+
+    .container {
+        width: 1200px;
+    }
+
+    .advantages-desk {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+
+         .advantages-block:first-child {
+            position: relative;
+             margin-right: 88px;
+             margin-bottom: 0;
+         }
+
+    .advantages-block {
+        position: relative;
+        margin-right: 88px;
+        margin-bottom: 0;
+    }
+
+   
+
+
+    .advantages-block:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .line::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 124px;
+    top: 55px;
+    left: 330px;
+    position: absolute;
+    }
+
+
+    /* .advantages-block:first-child:after {
+        content: " ";
+        background: rgba(255, 255, 255, 0.5);
+        width: 1px;
+        height: 124px;
+        top: 55px;
+        left: 330px;
+        position: absolute;
+    } */
+
+                .create-line-left {
+                    padding-left: 20px;
+                    /* необходим для формирования позиций линии */
+                    position: relative;
+                    /* весь блок будет занимать ширину по размеру контента в нём */
+                    display: inline-block;
+                }
+        
+        
+        
+                .create-line-left:after {
+                    content: " ";
+                    background: #33CCFF;
+                    width: 150px;
+                    height: 1px;
+                    /* располагаем линию сверху от текста */
+                    top: 25px;
+                    /* включаем абсолютное позиционирование относительно блока с relative */
+                    position: absolute;
+                }
+   
+}
