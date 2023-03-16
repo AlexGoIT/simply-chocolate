@@ -179,12 +179,13 @@
     opacity: 0;
     transition: opacity var(--timing-function);  
 }
- .menu-mobile-link::after,
- .menu-mobile-link::after{
+ .menu-mobile-link:hover::after,
+ .menu-mobile-link:hover::after{
     opacity: 1;
 }
 
 .text-mobile-menu{
+    font-weight: 500;
     color: var(--text-color-dark-theme);
 }
 .text-mobile-menu:hover,
