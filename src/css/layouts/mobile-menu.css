@@ -1,16 +1,15 @@
 /*mobile-menu*/
 .mobile-menu{
-    position: absolute; 
-    flex-direction: column;
-    width: 220px;
-    height: 100%;
-    z-index: 1000;
+    position: fixed;
     top: 0;
     right: 0;
+    transform: translateX(100%);  
+    width: 220px;
+    height: 100%;
+    z-index: 100;  
     background-color: var(--bg-color-dark);
     transform: translateX(100%);
-    transition: transform 1s linear;
-}
+    transition: transform 1s linear;}
 @media screen and (min-width:768px) {
     .mobile-menu{
         width: 290px;
@@ -19,8 +18,7 @@
 .mobile-menu.is-open{
     transform: translateX(0%);
 }
-.mobile-menu-container{
-    position: relative;
+.mobile-menu-container{    
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -28,7 +26,7 @@
 }
 /*button-close*/
 .btn-close-menu{ 
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -36,8 +34,7 @@
     background: none;
     border: none;
     width: 28px;
-    height: 28px;
-    padding: 8px;
+    height: 28px;  
     transition: stroke var(--timing-function);    
 }
 @media screen and (min-width:768px) {
@@ -49,18 +46,27 @@
 .btn-close-menu:hover,
 .btn-close-menu:focus{
     width: 40px;
-    height: 40px;
-    padding: 12px 4px 12px 20px;
+    height: 40px;   
 }
 .close-icon-menu{
     stroke: var(--icon-color-normal-dark-theme);
-    width: 100%;
-    height: 100%;
-    transition: stroke var(--timing-function);
+    width: 12px;
+    height: 12px;
+    stroke-width: 2px;
+    transform-origin: top left;
+    transition: stroke 0.5s linear, transform 0.5s linear;
 }
-.btn-close-menu:hover .close-icon-menu,
-.btn-close-menu:focus .close-icon-menu{
+@media screen and (min-width:768px) {
+    .close-icon-menu{  
+        width: 14px;
+        height: 14px;        
+    }  
+}
+
+.btn-close-menu:hover > .close-icon-menu,
+.btn-close-menu:focus > .close-icon-menu{
     stroke: var(--icon-color-active);
+    transform: scale(1.5);
 }
 /*/button-close*/
 .menu-mobile-list{
