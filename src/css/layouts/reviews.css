@@ -1,1 +1,23 @@
-/* Tttt */
+/* ----------------- chocolate is loved ----------------- */
+
+@import 'swiper/css';
+
+.chocolate-is-loved {
+    
+background-color: #E2E2E2;
+}
+.container {
+ max-width: 375px;   
+}
+
+.review-list {
+    display: flex;
+    width: inherit;
+    
+}
+.review-item {
+    width: inherit;
+}
+.review-card {
+    width: 335px;
+}
