@@ -4,7 +4,7 @@
   --body-background-color: #fafafa;
   /* Font color */
   --text-color-light-theme: #111111;
-  --text-color-dark-themr: #ffffff;
+  --text-color-dark-theme: #ffffff;
   --secondary-text-color-light-theme: rgba(17, 17, 17, 0.7);
   --secondary-text-color-dark-theme: rgba(255, 255, 255, 0.7);
   /* Card, Menu, Section Background color */
@@ -29,4 +29,6 @@
   --orange: #fd9222;
   --white: #fafafa;
   --pink: #fcf1e0;
+  /*Timing-function*/
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
