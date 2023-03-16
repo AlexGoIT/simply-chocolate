@@ -9,7 +9,7 @@
     z-index: 100;  
     background-color: var(--bg-color-dark);
     transform: translateX(100%);
-    transition: transform 1s linear;}
+    transition: transform 0.5s linear;}
 @media screen and (min-width:768px) {
     .mobile-menu{
         width: 290px;
@@ -42,11 +42,6 @@
         width: 32px;
         height: 32px;        
     }  
-}
-.btn-close-menu:hover,
-.btn-close-menu:focus{
-    width: 40px;
-    height: 40px;   
 }
 .close-icon-menu{
     stroke: var(--icon-color-normal-dark-theme);
