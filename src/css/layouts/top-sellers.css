@@ -3,7 +3,7 @@
 }
 
 .container {
-    width: 375px;
+    max-width: 375px;
 }
 
 .title-sellers {
@@ -54,5 +54,8 @@ gap: 32px;
     font-size: 14px;
     padding: 12px 28px;
     margin: 0 auto;
+}
 
+@media screen and  {
+    
 }
