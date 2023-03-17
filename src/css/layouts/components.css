@@ -1,5 +1,7 @@
 .section-components {
-  padding: 72px 20px;
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .title-components {
   font-weight: 600;
@@ -11,6 +13,7 @@
   color: #111111;
   margin-bottom: 24px;
 }
+
 .components {
   color: #fd9222;
 }
@@ -18,7 +21,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
-
   letter-spacing: -0.02em;
   color: #111111;
   margin-bottom: 32px;
@@ -26,23 +28,35 @@
 
 /*  =========== C O M P O N E N T S =============  */
 
-.list-components {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 .item-components {
   background-color: #fd9222;
   border: 1px solid #fd9222;
   border-radius: 15px;
-  padding: 28px 55px 28px 28px;
+  padding: 28px 28px 28px 28px;
   position: relative;
   overflow: hidden;
 }
 
-.img-components {
+.item-components.milk {
+  background-color: #fff;
+}
+.item-components.nuts {
+  background-color: #1e1823;
+}
+.item-components.coffee {
+  background-color: #fff;
+}
+.item-components:hover .overlay-components,
+.item-components:focus .overlay-components {
+  background-color: #fff;
+  transform: translateY(0);
+}
+.components-thumb {
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
 }
+
 .nuts-chocolate,
 .milk-chocolate {
   color: #fff;
@@ -50,7 +64,12 @@
 .milk-chocolate {
   color: black;
 }
+.milk-chocolate {
+  display: flex;
+  display: block;
+}
 
+/* ======== O V E R L A Y ====================== */
 .overlay-components {
   top: 0;
   left: 0;
@@ -58,38 +77,118 @@
   width: 100%;
   border: 1px solid #fd9222;
   border-radius: 15px;
-  padding: 28px;
+  padding-right: 28px;
+  padding-left: 28px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   position: absolute;
   background-color: #fff;
   transform: translateY(100%);
   transition: transform 250ms linear;
 }
-.item-components:hover .overlay-components,
-.item-components:focus .overlay-components {
+.overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 8px;
+}
+.btn-components {
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  gap: 14px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  align-items: center;
+  color: #111111;
+  border-radius: 35px;
+  border: 1px solid #fd9222;
   background-color: #fff;
-  transform: translateY(0);
+}
+.btn-components:hover,
+.btn-components:focus {
+  background-color: #fd9222;
+  color: #fff;
 }
 
 .description-components {
+  font-family: 'Montserrat';
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1;
   letter-spacing: -0.02em;
   color: #111111;
 }
-.milk-chocolate {
-  margin-bottom: 8px;
+@media screen and (max-width: 767px) {
+  .list-components {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 }
-.milk-chocolate {
-  display: flex;
-  display: block;
-  margin-bottom: 14px;
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .container {
+    width: 768px;
+    padding-inline: 32px;
+  }
+
+  .title-components {
+    margin-bottom: 28px;
+  }
+  .tex-components {
+    text-align: center;
+    padding: 0 109px;
+    margin-bottom: 50px;
+  }
+  .list-components {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .item-components {
+    width: 336px;
+  }
 }
-.item-components.milk {
-  background-color: #fff;
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .item-components.chocolate {
+    order: 1;
+  }
+  .item-components.milk {
+    order: 3;
+  }
+  .item-components.nuts {
+    order: 4;
+  }
+  .item-components.coffee {
+    order: 2;
+  }
 }
-.item-components.nuts {
-  background-color: #1e1823;
-}
-.item-components.chocolate {
-  background-color: #fff;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 128px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+  .list-components {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .tex-components {
+    text-align: center;
+    padding: 0 325px;
+  }
+  .item-components {
+    width: 270px;
+  }
 }
