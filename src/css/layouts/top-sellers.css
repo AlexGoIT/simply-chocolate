@@ -66,6 +66,15 @@ color :#FD9222;
 max-width: 768px;
     }
 
+.title-sellers {
+font-size: 24px;
+font-weight: 600;
+letter-spacing: -0.03em;
+}
+.about-sellers {
+    display: flex;
+    flex-direction: row;
+}
 
 }
 
