@@ -1,4 +1,6 @@
-.section-sellers {}
+.section-sellers {
+    background-color: #FAFAFA;
+}
 
 .container {
     width: 375px;
@@ -11,16 +13,45 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: -0.03em;
 text-transform: uppercase;
+padding-bottom: 32px;
 }
 
 .title-accent {
     color: #FD9222;
 }
 
-.about-sellers {}
+.about-sellers {
+display: flex;
+flex-direction: column;
+gap: 32px;
 
-.list {}
+}
 
-.about-sellers-item {}
+.about-sellers-text {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
 
-.sellers-btn {}
+
+.about-sellers-item {
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+}
+
+.sellers-btn {
+    min-width: 120px;
+    border-radius: 100px;
+    border: none;
+    background-color: #FD9222;
+    color: #FFFFFF;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 28px;
+    margin: 0 auto;
+
+}
