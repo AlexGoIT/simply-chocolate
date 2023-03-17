@@ -1,0 +1,26 @@
+.section-sellers {}
+
+.container {
+    width: 375px;
+}
+
+.title-sellers {
+font-size: 20px;
+font-weight: 600;
+line-height: 1.2;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+}
+
+.title-accent {
+    color: #FD9222;
+}
+
+.about-sellers {}
+
+.list {}
+
+.about-sellers-item {}
+
+.sellers-btn {}
