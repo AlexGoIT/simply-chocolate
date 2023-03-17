@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper from '/swiper/bundle';
 
 const reviewSwiper = new Swiper('.review-swiper', {
 
