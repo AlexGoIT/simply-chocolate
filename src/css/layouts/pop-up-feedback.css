@@ -1,4 +1,4 @@
-/*  */
+
 
    .popup-feedback-section{
     display: flex;
@@ -69,18 +69,12 @@
 
 .svg-pop-up{
     stroke: #F16529;
-    /* width: 16px;
-    height: 16px; */
+    
     
 }
 
 .img-popup-mobile{
-    /* position: absolute;
-width: 296px;
-height: 399px;
-left: -124px;
-top: 206px;
-transform: rotate(-17deg) */
+  
 position: absolute;
 width: 296px;
 height: 399px;
