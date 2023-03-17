@@ -6,8 +6,9 @@
     
 background-color: var(--body-background-color);
 }
-.container {
- max-width: 375px;   
+.container-review {
+max-width: 375px;
+margin-bottom: 32px;
 }
 
 .review-title {
@@ -24,18 +25,18 @@ margin-bottom: 32px;
 }
 
 .review-list {
-display: flex;
-width: inherit;    
+
 }
 .review-item {
-width: inherit;
+
 
 }
 .review-card {
 max-width: 335px;
+height: 200px;
 padding-top: 56px;
 padding-left: 18px;
-padding-bottom: 42px;
+padding-bottom: 24px;
 padding-right: 18px;
 border: 1px solid rgba(17, 17, 17, 0.1);
 box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
@@ -57,18 +58,32 @@ top: 0;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-.swiper {
+
+.review-swiper {
+/* copy from original swiper START*/
+margin-left: auto;
+margin-right: auto;
+position: relative;
+overflow: hidden;
+list-style: none;
+padding: 0;
+z-index: 1;
+display: block;
+/* copy from original swiper END*/
+
 padding-top: 40px;
 max-width: 335px;  
 }
+
 .review-paragraph {
-    text-align: center;
+text-align: center;
 }
+
 .review-button {
 display: block;
 width: 165px;
 height: 41px;  
-border: 1px solid #FD9222;
+border: 1px solid var(--button-bg-normal-light-theme);
 border-radius: 100px;
 margin-right: auto;
 margin-left: auto;
@@ -77,11 +92,36 @@ font-weight: 600;
 line-height: 1.2;
 text-align: center;
 }
-/* .swiper-pagination-bullet {
-    display: flex;
-    width: 10px;
-    height: 10px;
-    background-color:red ;
-} */
+
+.review-button:hover {
+background-color: var(--button-bg-normal-light-theme);
+color: var(--button-font-normal-light-theme);
+}
+
+.review-swiper-pagination {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 13px;
+}
+
+.review-swiper-pagination .swiper-pagination-bullet {
+width: 13px;
+height: 13px;
+border-radius: 50%;
+background-color: rgba(17, 17, 17, 0.1);
+cursor: pointer;
+}
+
+.review-swiper-pagination .swiper-pagination-bullet-active {
+width: 28px;
+border-radius: 13px;
+background-color: var(--button-font-active-light-theme);
+}
+
+
+
+
 
 
