@@ -1,2 +1,2 @@
 import './mobile-menu.js';
-import './swiper.js';
+import './slider.js';
