@@ -1,6 +1,6 @@
 /*  */
 @media screen and (min-width: 320px) {
-   .container{
+   .popup-feedback-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     width: 311px;
     height: 350px;
     position: fixed;
-    top: 0;
+  
     padding: 14px;
     background-color: #FD9222;
     border-radius: 15px;
@@ -69,12 +69,26 @@
 
 .svg-pop-up{
     stroke: #F16529;
+    /* width: 16px;
+    height: 16px; */
     
 }
 
 .img-popup-mobile{
-    
+    /* position: absolute;
+width: 296px;
+height: 399px;
+left: -124px;
+top: 206px;
+transform: rotate(-17deg) */
+position: absolute;
+width: 296px;
+height: 399px;
+left: -80px;
+top: 145px;
+transform: rotate(-10deg)
 }
+
 }
 
 
