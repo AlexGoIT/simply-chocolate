@@ -1,1 +1,129 @@
-/*--*/
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  background: #FCF1E0;
+  border-radius: 30px;
+margin-left: auto;
+  margin-right: auto;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../images/hero/chocolate-covered-cocoa-powder-mobile1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+
+  .hero {
+background-image: url('../../images/hero/chocolate-covered-cocoa-powder-mobile2x.jpg');
+ }
+
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  text-align: left;
+margin-bottom: 32px;
+  
+}
+.hero-btn-list {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.modal-button-one {
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*??*/
+  background: #FD9222;
+  border-radius: 100px;
+
+}
+
+.modal-button-one:hover,
+.modal-button-one:focus {
+  background: #FCF1E0;
+}
+
+.text-button {
+  font-family: inherit;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.text-button:hover,
+.text-button:focus {
+  color: #FD9222;
+}
+
+.modal-button-two {
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*??*/
+
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+}
+
+.modal-button-two:hover,
+.modal-button-two:focus {
+  border: 1px solid #FD9222;
+}
+
+.hero-paragraph {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 3;
+
+
+  letter-spacing: -0.03em;
+
+  color: #FFFFFF;
+
+}
+.scroll-link {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/*-----mobile version----*/
+@media screen and (min-width:375px) {
+  .container {
+    max-width: 335px;
+  }
+  .hero-title {
+    width: 299px;
+  }
+}
+  
