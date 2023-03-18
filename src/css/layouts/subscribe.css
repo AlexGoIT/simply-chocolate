@@ -13,7 +13,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(../../images/subscribe/sbcribe-mob.jpg);
+    url(../../images/subscribe/subscribe-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../../images/subscribe/subcribe-mob@2x.jpg);
+      url(../../images/subscribe/subscribe-mob@2x.jpg);
   }
 }
 
@@ -91,7 +91,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../../images/subscribe/subcribe-tab.jpg);
+      url(../../images/subscribe/subscribe-tab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -103,7 +103,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../../images/subscribe/subcrib-tab@2x.jpg);
+        url(../../images/subscribe/subscribe-tab@2x.jpg);
     }
   }
 
@@ -139,7 +139,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../../images/subscribe/subcribe-desk.jpg);
+      url(../../images/subscribe/subscribe-desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -151,7 +151,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../../images/subscribe/subcribe-desk@2x.jpg);
+        url(../../images/subscribe/subscribe-desk@2x.jpg);
     }
   }
 }
