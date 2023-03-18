@@ -1,0 +1,136 @@
+/* -------SUBSCRIBE STYLES-------- */
+.subscribe {
+  max-width: 374px;
+
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 62px;
+
+  color: var(--text-color-dark-theme);
+
+  background-image: url(../../images/subscribe/sbcribe-mob.jpg),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../../images/subscribe/subcribe-mob@2x.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  }
+}
+
+.subscribe-title {
+  max-width: 291px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.subscribe-text {
+  margin-bottom: 24px;
+
+  line-height: calc(18 / 14);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.subscribe-btn {
+  display: block;
+  min-width: 128px;
+  min-height: 41px;
+
+  margin: 0 auto;
+
+  font-weight: 600;
+  line-height: calc(17 / 14);
+  color: inherit;
+
+  background-color: var(--button-bg-normal-light-theme);
+  border-radius: 100px;
+  border-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    max-width: 768px;
+
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    background-image: url(../../images/subscribe/subcribe-tab.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../../images/subscribe/subcrib-tab@2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    }
+  }
+
+  .subscribe-title {
+    max-width: 378px;
+
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .subscribe-text {
+    max-width: 467px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subscribe-btn {
+    min-width: 172px;
+    min-height: 50px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    transition: var(--timing-function);
+  }
+
+  .subscribe-btn:is(:hover, :focus) {
+    background-color: var(--button-bg-active-light-theme);
+    color: var(--button-font-active-light-theme);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    max-width: 1200px;
+
+    background-image: url(../../images/subscribe/subcribe-desk.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../../images/subscribe/subcribe-desk@2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    }
+  }
+}
