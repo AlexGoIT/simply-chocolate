@@ -118,7 +118,8 @@
   background-color: #fff;
 }
 .btn-components:hover,
-.btn-components:focus {
+.btn-components:focus,
+.btn-components.current {
   background-color: #fd9222;
   color: #fff;
 }
@@ -130,7 +131,12 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111111;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-word;
 }
 @media screen and (max-width: 767px) {
   .list-components {
