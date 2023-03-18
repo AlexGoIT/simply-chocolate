@@ -40,7 +40,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: var(--font-color-light-theme);
+  color: var(--text-color-light-theme);
   background-color: var(--body-background-color);
 }
 
