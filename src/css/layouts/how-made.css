@@ -3,12 +3,11 @@
 } */
 /* --Haw-its-Made*/
 :root {
-  --section-width: 375px;
   --font-weight-600: 600;
 }
 .section-howmade {
   padding-top: 72px;
-  max-width: var(--section-width);
+  max-width: 375px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -24,16 +23,44 @@
 .title-color-akcent {
   color: var(--orange);
 }
-.howmade-video {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+/* .temp {
+  max-width: 335px;
+  height: 700px;
+  background-image: url(../../images/how-made/how_made-poster-mob.jpg);
+  outline: 2px solid #3424b3;
+} */
+.howmade-video-box {
+  width: 335px;
+  max-width: 100%;
+  height: 500px;
+  max-height: 100%;
+
   border-radius: 15px;
   margin-bottom: 20px;
+  background-image: url(../../images/how-made/how_made-poster-mob.jpg);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+  /* outline: 2px solid #0b9c51; */
+  background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .howmade-video-box {
+    background-image: url(../../images/how-made/how_made-poster-mob@2x.jpg);
+  }
+}
+.howmade-video-play {
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../../images/how-made/how_made-poster-mob.jpg);
+  outline: 2px solid #c71414; */
+}
+
 .howmade-text {
   padding-top: 20px;
   padding-left: 14px;
   padding-right: 14px;
-  padding-bottom: 20j;
+  padding-bottom: 20px;
 }
 
 .howmade-subtitle {
@@ -44,13 +71,63 @@
   color: var(--black);
 }
 .howmade-list {
-  list-style: disc inside url(/src/images/how-made/icon-piont-list\ .svg);
+  list-style: disc inside url(/src/images/how-made/icon-piont-list\ .jpg);
 }
 .howmade-item {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(18\14);
+  letter-spacing: -0.02em;
+  color: var(--black);
 }
 .howmade-item:not(:last-child) {
   margin-bottom: 18px;
+}
+/* ------------------------------------Tablet-- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-howmade {
+    padding-top: 100px;
+    padding-bottom: 32px;
+    max-width: 768px;
+  }
+  .howmade-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-bottom: 50px;
+  }
+  .howmade-video-box {
+    width: 614px;
+    height: 400px;
+    background-image: url(../../images/how-made/how_made-poster-tabl.jpg);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .howmade-video-box {
+      background-image: url(../../images/how-made/how_made-poster-tabl@2x.jpg);
+      background-size: 614px 400px;
+    }
+  }
+  .howmade-video-play {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howmade-text {
+    width: 614px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 102px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .howmade-subtitle {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+  .howmade-item {
+    max-width: 464px;
+  }
 }
