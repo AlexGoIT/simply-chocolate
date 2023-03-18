@@ -1,1 +1,56 @@
+/* .container {
+  outline: 2px solid #730c0c;
+} */
 /* --Haw-its-Made*/
+:root {
+  --section-width: 375px;
+  --font-weight-600: 600;
+}
+.section-howmade {
+  padding-top: 72px;
+  max-width: var(--section-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+.howmade-title {
+  font-weight: var(--font-weight-600);
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.title-color-akcent {
+  color: var(--orange);
+}
+.howmade-video {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.howmade-text {
+  padding-top: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 20j;
+}
+
+.howmade-subtitle {
+  font-weight: var(--font-weight-600);
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  margin-bottom: 20px;
+  color: var(--black);
+}
+.howmade-list {
+  list-style: disc inside url(/src/images/how-made/icon-piont-list\ .svg);
+}
+.howmade-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18\14);
+}
+.howmade-item:not(:last-child) {
+  margin-bottom: 18px;
+}
