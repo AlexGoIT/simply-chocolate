@@ -68,6 +68,15 @@
   background-color: var(--button-bg-normal-light-theme);
   border-radius: 100px;
   border-color: transparent;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:is(:hover, :focus) {
+  background-color: var(--button-bg-active-light-theme);
+  color: var(--button-font-active-light-theme);
 }
 
 @media screen and (min-width: 768px) {
@@ -118,13 +127,6 @@
 
     font-size: 18px;
     line-height: calc(22 / 18);
-
-    transition: var(--timing-function);
-  }
-
-  .subscribe-btn:is(:hover, :focus) {
-    background-color: var(--button-bg-active-light-theme);
-    color: var(--button-font-active-light-theme);
   }
 }
 
