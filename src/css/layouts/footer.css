@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 375px) {
+
     
 .footer-section {
     
@@ -81,8 +81,31 @@
 
 .footer-list-link {}
 
-}
+
 
 .footer-navigation {
     color: #FFFFFF;
+}
+
+@media screen and (min-width:768px){
+    .footer-list-nav {
+        display: flex;
+        gap: 24px;
+        
+    }
+
+    .footer-container {
+        padding: 50px 32px;
+    }
+
+    .footer-flex-container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .footer-slogan {
+        max-width: 300px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
 }
