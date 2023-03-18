@@ -4,5 +4,6 @@
 /* Sections styles */
 @import url('./layouts/header.css');
 @import url('./layouts/mobile-menu.css');
+@import url('./layouts/components.css');
 @import url('./layouts/advantages.css');
 @import url('./layouts/footer.css');

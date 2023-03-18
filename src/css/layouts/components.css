@@ -1,0 +1,218 @@
+.section {
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.title-components {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.components {
+  color: var(--orange);
+}
+.tex-components {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/*  =========== C O M P O N E N T S =============  */
+
+.item-components {
+  position: relative;
+  overflow: hidden;
+}
+
+.components-card {
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.item-components.chocolate > .components-card {
+  background-color: var(--orange);
+}
+.item-components.milk > .components-card {
+  border: 1px solid var(--orange);
+}
+.item-components.nuts > .components-card {
+  background-color: var(--bg-color-dark);
+}
+.item-components.coffee > .components-card {
+  border: 1px solid var(--orange);
+}
+
+.components-card:hover .overlay-components,
+.components-card:focus .overlay-components {
+  transform: translateY(0);
+}
+
+.components-thumb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.dairy-chocolate,
+.coffee-chocolate,
+.nuts-chocolate,
+.milk-chocolate {
+  font-weight: 600;
+  line-height: 1.29;
+}
+.nuts-chocolate,
+.milk-chocolate {
+  color: var(--text-color-dark-themr);
+}
+
+/* ======== O V E R L A Y ====================== */
+
+.overlay-components {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 28px;
+  position: absolute;
+  background-color: var(--bg-color-light);
+  border-radius: 13px;
+  transform: translateY(calc(100% + 1px));
+  display: block;
+  transition: transform 250ms linear;
+  overflow: hidden;
+}
+.overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.btn-components {
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  gap: 14px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  align-items: center;
+  color: var(--black);
+  border-radius: 35px;
+  border: 1px solid var(--orange);
+  background-color: var(--bg-color-light);
+}
+.btn-components:hover,
+.btn-components:focus,
+.btn-components.current {
+  background-color: var(--orange);
+  color: var(--text-color-dark-themr);
+}
+.btn-components.current:hover,
+.btn-components.current:focus {
+  color: var(--orange);
+  background: var(--pink);
+}
+
+.description-components {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--text-color-light-theme);
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+@media screen and (max-width: 767px) {
+  .list-components {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-components {
+    padding: 0 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+  .container {
+    width: 768px;
+    padding-inline: 32px;
+  }
+
+  .title-components {
+    font-size: 24px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .tex-components {
+    text-align: center;
+    padding: 0 109px;
+    margin-bottom: 50px;
+  }
+  .list-components {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .item-components {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-components.chocolate {
+    order: 1;
+  }
+  .item-components.milk {
+    order: 3;
+  }
+  .item-components.nuts {
+    order: 4;
+  }
+  .item-components.coffee {
+    order: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 128px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+  .list-components {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .tex-components {
+    text-align: center;
+    padding: 0 325px;
+  }
+  .item-components {
+    width: 270px;
+  }
+  .components-card {
+    padding: 28px;
+  }
+}
