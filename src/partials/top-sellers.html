@@ -3,15 +3,14 @@
     <h1 class="title-sellers"><span class="title-accent">Top</span> Sellers</h1>
     <ul class="about-sellers">
       <li class="about-sellers-item">
-        <img
-          srcset="
-            ../images/top-sellers/chocolate1xmob.jpg 1x,
-            ../images/top-sellers/chocolate2xmob.jpg 2x
-          "
-          src="../images/top-sellers/chocolate1xmob.jpg"
-          alt="Chokolate"
-          width="335"
-        />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="../images/top-sellers/nut2xx.jpg"
+          />
+          <img src="../images/top-sellers/nut1x.jpg" alt="Chokolate" />
+        </picture>
+
         <p сlass="about-sellers-text">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
@@ -19,15 +18,19 @@
         </p>
       </li>
       <li class="about-sellers-item">
-        <img
-          srcset="
-            ../images/top-sellers/chocolatemore1xmob.jpg 1x,
-            ../images/top-sellers/chocolatemore2xmob     2x
-          "
-          src="../images/top-sellers/chocolate1xmob.jpg"
-          alt="Chocolatemore"
-          width="335"
-        />
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcset="../images/top-sellers/choco2x.jpg"
+          />
+          <img src="../images/top-sellers/choco1x.jpg" alt="Chokolatechoco" />
+        </picture>
+        <button class="sellers-btn" type="button">Buy now</button>
+      </li>
+      <li class="about-sellers-item">
+        <picture>
+          <img src="../images/top-sellers/3xxxx (1).jpg" alt="Sweet" />
+        </picture>
         <button class="sellers-btn" type="button">Buy now</button>
       </li>
     </ul>
