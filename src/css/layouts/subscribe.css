@@ -8,8 +8,12 @@
 
   color: var(--text-color-dark-theme);
 
-  background-image: url(../../images/subscribe/sbcribe-mob.jpg),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/subscribe/sbcribe-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,8 +23,12 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe {
-    background-image: url(../../images/subscribe/subcribe-mob@2x.jpg),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../../images/subscribe/subcribe-mob@2x.jpg);
   }
 }
 
@@ -35,6 +43,7 @@
   line-height: calc(24 / 20);
   text-align: center;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 .subscribe-text {
@@ -68,19 +77,24 @@
     padding-top: 72px;
     padding-bottom: 72px;
 
-    background-image: url(../../images/subscribe/subcribe-tab.jpg),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../../images/subscribe/subcribe-tab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url(../../images/subscribe/subcrib-tab@2x.jpg),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../../images/subscribe/subcrib-tab@2x.jpg);
     }
   }
 
@@ -118,19 +132,24 @@
   .subscribe {
     max-width: 1200px;
 
-    background-image: url(../../images/subscribe/subcribe-desk.jpg),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../../images/subscribe/subcribe-desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url(../../images/subscribe/subcribe-desk@2x.jpg),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../../images/subscribe/subcribe-desk@2x.jpg);
     }
   }
 }
