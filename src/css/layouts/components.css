@@ -1,4 +1,4 @@
-.section-components {
+.section {
   width: 100%;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -10,47 +10,52 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--black);
   margin-bottom: 24px;
 }
 
 .components {
-  color: #fd9222;
+  color: var(--orange);
 }
 .tex-components {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--black);
   margin-bottom: 32px;
 }
 
 /*  =========== C O M P O N E N T S =============  */
 
 .item-components {
-  background-color: #fd9222;
-  border: 1px solid #fd9222;
-  border-radius: 15px;
-  padding: 28px 28px 28px 28px;
   position: relative;
   overflow: hidden;
 }
 
-.item-components.milk {
-  background-color: #fff;
+.components-card {
+  border-radius: 15px;
+  padding: 28px 55px 28px 28px;
 }
-.item-components.nuts {
-  background-color: #1e1823;
+
+.components-card.chocolate {
+  background-color: var(--orange);
 }
-.item-components.coffee {
-  background-color: #fff;
+.components-card.milk {
+  border: 1px solid var(--orange);
 }
-.item-components:hover .overlay-components,
-.item-components:focus .overlay-components {
-  background-color: #fff;
+.components-card.nuts {
+  background-color: var(--bg-color-dark);
+}
+.components-card.coffee {
+  border: 1px solid #fd9222;
+}
+
+.components-card:hover .overlay-components,
+.components-card:focus .overlay-components {
   transform: translateY(0);
 }
+
 .components-thumb {
   display: flex;
   justify-content: center;
@@ -59,10 +64,10 @@
 
 .nuts-chocolate,
 .milk-chocolate {
-  color: #fff;
+  color: var(--white);
 }
 .milk-chocolate {
-  color: black;
+  color: var(--black);
 }
 .milk-chocolate {
   display: flex;
@@ -70,21 +75,21 @@
 }
 
 /* ======== O V E R L A Y ====================== */
+
 .overlay-components {
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid #fd9222;
-  border-radius: 15px;
-  padding-right: 28px;
-  padding-left: 28px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px;
   position: absolute;
-  background-color: #fff;
-  transform: translateY(100%);
+  background-color: var(--bg-color-light);
+  border-radius: 13px;
+
+  transform: translateY(calc(100% + 1px));
+  display: block;
   transition: transform 250ms linear;
+  overflow: hidden;
 }
 .overlay-title {
   font-weight: 600;
@@ -95,6 +100,10 @@
   color: #111111;
   margin-bottom: 8px;
 }
+/* .overlay-fix {
+  position: sticky;
+  top: -1px;
+} */
 .btn-components {
   padding: 6px 16px;
   margin-bottom: 14px;
@@ -118,9 +127,10 @@
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111111;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 767px) {
   .list-components {
@@ -133,7 +143,6 @@
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
   .container {
     width: 768px;
@@ -158,7 +167,7 @@
     width: 336px;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-components.chocolate {
     order: 1;
   }
