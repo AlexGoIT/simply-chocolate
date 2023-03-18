@@ -40,7 +40,7 @@
 
 }
 
-.paragraph-hero>br {
+.paragraph-hero > br {
   display: none;
 }
 
@@ -61,7 +61,7 @@
 .text-button {
 
   font-family: inherit;
-  padding: 12px 28px;
+  padding: 12px 26px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -189,7 +189,7 @@
 
   }
 
-  br {
+  .paragraph-hero > br {
     display: block;
   }
 
