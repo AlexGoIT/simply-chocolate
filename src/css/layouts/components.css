@@ -12,6 +12,7 @@
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .components {
@@ -36,7 +37,7 @@
 
 .components-card {
   border-radius: 15px;
-  padding: 28px 55px 28px 28px;
+  padding: 28px;
 }
 
 .item-components.chocolate > .components-card {
@@ -119,6 +120,11 @@
   background-color: var(--orange);
   color: var(--text-color-dark-themr);
 }
+.btn-components.current:hover,
+.btn-components.current:focus {
+  color: var(--orange);
+  background: var(--pink);
+}
 
 .description-components {
   font-weight: 400;
@@ -138,6 +144,9 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
+  }
+  .title-components {
+    padding: 0 26px;
   }
 }
 
