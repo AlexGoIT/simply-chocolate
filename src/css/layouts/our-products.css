@@ -1,7 +1,6 @@
 .our-products-wrap{
     display: flex;
-    flex-direction: column;  
-    overflow: hidden;
+    flex-direction: column; 
 }
 .our-products-title{
     align-self: center;
@@ -15,11 +14,12 @@
 .our-products-accent-text{
     color: var(--orange);
 }   
-.our-products-cardc-wrap{
+.our-products-cardc-wrap{    
     display: flex;
     justify-content:flex-start;
     flex-wrap: nowrap;
     gap: 20px;
+    overflow: hidden;
 }
 @media screen and (min-width:768px){
     .our-products-cardc-wrap{
