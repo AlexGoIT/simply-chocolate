@@ -6,9 +6,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
     
    } 
 
@@ -40,10 +40,7 @@
     margin-bottom: 42px;
 }
 
-.btn-pop-ups:hover{
-    background-color: #FD9222;
-    
-}
+
 
 .containers-titles{
     color: #FCF1E0;
@@ -82,9 +79,7 @@
     
     
 }
-.btn-pop-ups .svg-pop-ups:hover{
-stroke: #FFFFFF;
-}
+
 
 
 .img-popups-mobile{
