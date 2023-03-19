@@ -4,6 +4,7 @@
 /* Sections styles */
 @import url('./layouts/header.css');
 @import url('./layouts/mobile-menu.css');
+@import url('./layouts/components.css');
 @import url('./layouts/hero.css');
 @import url('./layouts/advantages.css');
 @import url('./layouts/components.css');
@@ -15,3 +16,4 @@
 @import url('./layouts/footer.css');
 @import url('./layouts/modal-buy-now.css');
 @import url('./layouts/modal-review.css');
+@import url('./layouts/modal-thank-you.css');
