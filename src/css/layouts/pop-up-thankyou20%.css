@@ -1,0 +1,149 @@
+.popup-feedback-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+   } 
+
+
+.pop-up{
+    width: 311px;
+    height: 350px;
+    position: fixed;
+  
+    padding: 14px;
+    background-color: #FD9222;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    
+}
+
+
+.btn-pop-up{
+    background-color: #FCF1E0;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 42px;
+}
+
+
+.container-title{
+    color: #FCF1E0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    width: 229px;
+    
+}
+
+
+.text-container{
+    color: #FFFFFF;
+    width: 219px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+
+.container-features{
+    margin-left: 40px;
+    margin-right: 8px;
+    position: relative;
+}
+
+
+.svg-pop-up{
+    stroke: #F16529;
+    width: 22px;
+    height: 22px;
+    
+    
+}
+
+
+.img-popup-mobile{
+    position: absolute;
+    width: 296px;
+    height: 399px;
+    left: -80px;
+    top: 145px;
+    transform: rotate(-10deg)
+}
+
+
+
+
+@media screen and (min-width: 768px){
+.pop-up{
+    height: 414px;
+    width: 516px;
+    }
+
+
+.container-features{
+    height: 88px;
+    width: 297px;
+    border-radius: 0px;
+    margin-left: 170px;
+    margin-right: 50px;
+    }
+
+
+.svg-pop-up{
+    width: 22px;
+    height: 22px;
+    }
+
+
+.container-title{
+    width: 276px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    }
+
+
+.btn-pop-up{
+    margin-bottom: 99px;
+    width: 40px;
+    height: 40px;
+    }
+
+
+.text-container{
+    width: 309px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    }
+
+
+.img-popup-mobile{
+    height: 516.0000114753436px;
+    width: 388px;
+    left: -120px;
+    top: 100px;
+    border-radius: 0px;
+    transform: rotate(-5deg);
+    }
+}
