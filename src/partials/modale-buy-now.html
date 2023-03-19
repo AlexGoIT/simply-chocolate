@@ -53,20 +53,20 @@
             <label class="modal-form-field">
                 <span class="modal-by-now-form-input-desc">Personal information</span>               
                 <span class="modal-form-input-wrap">                 
-                    <input type="text" name="user-name" placeholder="Name" id="name-label" class="modal-buy-now-input" pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>
-                    <input type="text" name="user-name" placeholder="Surname" id="name-label" class="modal-buy-now-input" pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>   
+                    <input type="text" name="user-name" placeholder="Name" id="name-label" class="modal-buy-now-input" required pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>
+                    <input type="text" name="user-name" placeholder="Surname" id="name-label" class="modal-buy-now-input" required pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>   
                 </span>             
             </label>
             <label class="modal-form-field">
                 <span class="modal-by-now-form-input-desc">Email</span>               
                 <span class="modal-form-input-wrap">
-                    <input type="text" id="email-user" placeholder="Enter your email" name="user-email" class="modal-buy-now-input"/> 
+                    <input type="text" id="email-user" placeholder="Enter your email" name="user-email" class="modal-buy-now-input" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"/> 
                 </span>             
             </label>
             <label class="modal-form-field">
                 <span class="modal-by-now-form-input-desc">Phone number</span>               
                 <span class="modal-form-input-wrap modal-buy-now-form-input-relative" >
-                    <input type="tel" id="user-phone" placeholder="Phone number" name="user-email" class="modal-buy-now-input modal-buy-now-input-phone" id="phone-user" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" /> 
+                    <input type="tel" id="user-phone" placeholder="Phone number" name="user-email" class="modal-buy-now-input modal-buy-now-input-phone" id="phone-user" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" /> 
                     <svg  class="modal-buy-now-icon-tel">
                         <use href="./images/icons.svg#icon-flag-ua"></use>
                     </svg>
@@ -76,7 +76,7 @@
             <label class="modal-form-field">
                 <span class="modal-by-now-form-input-desc">Card number</span>               
                 <span class="modal-form-input-wrap modal-buy-now-form-input-relative" >
-                    <input type="text" name="user-phone" placeholder="Enter  card" class="modal-buy-now-input modal-buy-now-input-master-card" id="phone-user" pattern="[0-9]" title="xxxx-xxxx-xxxx-xxxx"/>
+                    <input type="text" name="user-phone" placeholder="Enter  card" class="modal-buy-now-input modal-buy-now-input-master-card" id="phone-user" required pattern="[0-9]" title="xxxx-xxxx-xxxx-xxxx"/>
                     <svg class="modal-buy-now-icon-master-card">
                         <use href="./images/icons.svg#icon-mastercard"></use>
                     </svg>

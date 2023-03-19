@@ -206,6 +206,16 @@
         padding-left: 177px;
     }
 }
+.modal-buy-now-input:focus{
+    outline: none;
+    border-color: var(--orange);
+}
+.modal-buy-now-input:not(:focus):not(:placeholder-shown):valid{
+    border-color: green;
+}
+.modal-buy-now-input:not(:focus):not(:placeholder-shown):invalid{
+    border-color: red;
+}
 .modal-buy-now-form-input-relative{
     position: relative;    
 }
@@ -296,6 +306,10 @@
         height: 137px;       
         padding: 22px 24px;
     }
+}
+.modal-buy-now-comment-message:focus{
+    outline: none;
+    border-color: var(--orange);
 }
 .modal-buy-now-btn-submit{
     display: flex;
