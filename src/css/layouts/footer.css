@@ -19,17 +19,24 @@
   color: #FD9222;
 }
 
-.footer-nav {
+.footer-icons {
+  display: flex;
+  gap: 19px;
+  
+}
+
+.footer-address {
   display: flex;
   justify-content: space-between;
   padding-bottom: 32px;
+  font-style: normal;
 }
 
 .insta {
   stroke: #FFFFFF;
   fill: transparent;
   stroke-width: 2px;
-  margin-left: 15px;
+
 
 }
 
@@ -103,7 +110,7 @@ padding-top: 32px;
   background-color: #FD9222;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .footer-wrap {
     display: flex;
     justify-content: space-between;
@@ -116,6 +123,11 @@ padding-top: 32px;
     display: block;
     max-width: 320px;
   }
+
+  .footer-icons{
+    gap: 0;
+  }
+
 
  .contact-us {
     margin-right: 52px;
@@ -144,13 +156,13 @@ padding-top: 32px;
       margin-left: 19px;
     }
   
-    .footer-nav {
+    .footer-address {
       padding-bottom: 50px;
     }
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
   .contact-us {
     margin-right: 65px;
   }
@@ -174,10 +186,9 @@ padding-top: 32px;
   stroke: #FD9222;
 }
 
-.footer-nav {
+.footer-address {
   padding-bottom: 0;
 }
-
 }
 
 
