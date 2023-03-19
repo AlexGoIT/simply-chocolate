@@ -1,7 +1,4 @@
 /* -------------------------How-it's-Made*/
-:root {
-  --font-weight-600: 600;
-}
 .section-howmade {
   padding-top: 72px;
   max-width: 375px;
@@ -9,7 +6,7 @@
   margin-left: auto;
 }
 .howmade-title {
-  font-weight: var(--font-weight-600);
+  font-weight: 600;
   font-size: 20px;
   line-height: calc(24 / 20);
   text-align: center;
@@ -52,7 +49,7 @@
   padding-bottom: 20px;
 }
 .howmade-subtitle {
-  font-weight: var(--font-weight-600);
+  font-weight: 600;
   font-size: 18px;
   line-height: calc(24 / 18);
   margin-bottom: 20px;
