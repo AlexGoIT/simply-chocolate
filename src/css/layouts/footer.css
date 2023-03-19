@@ -68,6 +68,7 @@ padding-top: 32px;
 
 .footer .list .list-item-link:is(:hover, :focus) {
   color:#FD9222;
+  
 }
 
 .footer .list .list-item:last-child {
