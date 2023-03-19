@@ -10,6 +10,7 @@
   line-height: 1.2;
   font-weight: 500;
   font-style: normal;
+  display: block;
 }
 
 .footer .title .slogan {
@@ -24,6 +25,13 @@
 .footer .wrap-contact-us .insta {
   stroke: #FFFFFF;
   fill: transparent;
+  stroke-width: 2px;
+  margin-left: 15px;
+}
+
+.footer .wrap-contact-us .insta:is(:hover, :focus) {
+  color:#FD9222;
+
 }
 
 .footer .contact-us {
@@ -77,6 +85,8 @@
     max-width: 300px;
     font-weight: 500;
     font-size: 28px;
+    display: block;
+    max-width: 320px;
   }
 
   .footer .contact-us {
@@ -98,6 +108,9 @@
   .footer .line {
     margin: 50px 0 24px;
   }
+    .footer .wrap-contact-us .insta {
+      margin-left: 19px;
+    }
 }
 
 
@@ -112,16 +125,19 @@
     line-height: 1.2;
     font-style: normal;
     letter-spacing: -0.02em;
+    display: block;
   }
 
   .footer .line {
     margin-top: 58px;
   }
+.footer .wrap-contact-us .insta {
+  margin-left: 19px;
+}
+.footer .wrap-contact-us .insta:is(:hover, :focus) {
+  color: #FD9222;
 
-  /*.footer .wrap-contact-us .insta{*/
-  /*  width: 232px;*/
-  /*  height: 232px;*/
-  /*}*/
+}
 }
 
 
