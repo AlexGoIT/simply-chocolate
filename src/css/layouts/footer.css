@@ -88,22 +88,21 @@ padding-top: 32px;
   height: auto;
 }
 
-.footer .list .list-item-link.current{
-  display: block;
-  position: relative;
-  color:#FD9222
-}
-
 .footer .list .list-item-link::after{
   content: "";
   position: absolute;
   display: block;
-  border-radius: 2px;
   height: 1px;
-  width: 100%;
-  bottom: 8px;
+  width: 20px;
+  top: 28px;
   left: 0;
-  
+  background-color: transparent;
+  opacity: 0;
+  transition: color var(--timing-function);
+}
+
+.footer .list .list-item-link:hover::after {
+  background-color: #FD9222;
 }
 
 @media (min-width: 768px) {
