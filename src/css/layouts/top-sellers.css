@@ -16,8 +16,6 @@ padding: 32px 0px;
     color: #FD9222;
 }
 
-
-
 .about-sellers-text {
 line-height: 1.2;
 font-weight: 400;
@@ -26,6 +24,9 @@ letter-spacing: -0.02em;
 color: #111111;
 }
 
+.about-sellers-text {
+    margin-bottom: 32px;
+}
 
 .about-sellers-item {
 display: flex;
