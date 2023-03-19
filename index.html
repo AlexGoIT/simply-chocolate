@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chokolate/assets/index-664a7230.js"></script>
-    <link rel="stylesheet" href="/simply-chokolate/assets/index-d20ac77b.css">
+    <link rel="stylesheet" href="/simply-chokolate/assets/index-7f33d2c8.css">
   </head>
   <body>
     <header>
@@ -539,7 +539,26 @@
     <footer>
       
     </footer>
-
+   <div class="backdrop is-hidden" >
+  <div class="modal">
+  <button class="modal-btn" type="button">
+  <svg width="24px" height="24px">
+      <use href="/simply-chokolate/assets/icons-1d4c5174.svg#icon-x-close"></use>
+  </svg>
+  </button>
+  <p class="modal-title"><span>leave a review</span> <span>about <span class="akcent">our chocolate</span></span></p>
+  <form class="modal-form">
+<input type="text" name="user-name" placeholder="Name" id="name-label" class="modal-input" required pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>
+<input type="text" id="email-user" placeholder="Enter your email" name="user-email" required class="modal-input"/>
+<div class="modal-form-input-wrapper"><input type="tel" name="user-phone" required placeholder="Phone number" class="modal-input-phone modal-input" id="phone-user" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"/>
+<svg width="23.69px" height="17.63px" class="modal-form-icon">
+<use href="/simply-chokolate/assets/icons-1d4c5174.svg#icon-flag-ua"></use>
+</svg><span class="phone-number">+380</span></div>      
+<textarea name="user-message" placeholder="Enter text" id="comment-user" class="comment-message"></textarea>
+          <button type="submit" class="modal-form-submit">Send</button>
+  </form>
+  </div>
+  </div>
     
   </body>
 </html>
