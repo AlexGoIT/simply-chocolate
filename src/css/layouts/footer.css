@@ -64,6 +64,7 @@ padding-top: 32px;
 
 .footer-nav-item {
   margin-bottom: 18px;
+  position: relative;
 }
 
 .footer-nav-link:is(:hover, :focus) {
@@ -95,7 +96,7 @@ padding-top: 32px;
   left: 0;
   margin-top: 8px;
   background-color:#FD9222;
-  opacity: 0;
+  background: transparent;
   transition: opacity var(--timing-function);
 }
 
