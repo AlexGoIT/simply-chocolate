@@ -1,4 +1,4 @@
-.popup-feedback-section{
+.popup-thankyou20-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
    } 
 
 
-.pop-up{
+.pop-ups{
     width: 311px;
     height: 350px;
     position: fixed;
@@ -24,7 +24,7 @@
 }
 
 
-.btn-pop-up{
+.btn-pop-ups{
     background-color: #FCF1E0;
     border: none;
     border-radius: 50%;
@@ -38,7 +38,7 @@
 }
 
 
-.container-title{
+.containers-titles{
     color: #FCF1E0;
     font-weight: 600;
     font-size: 20px;
@@ -51,7 +51,7 @@
 }
 
 
-.text-container{
+.texts-containers{
     color: #FFFFFF;
     width: 219px;
     font-weight: 400;
@@ -61,14 +61,14 @@
 }
 
 
-.container-features{
+.container-feature{
     margin-left: 40px;
     margin-right: 8px;
     position: relative;
 }
 
 
-.svg-pop-up{
+.svg-pop-ups{
     stroke: #F16529;
     width: 22px;
     height: 22px;
@@ -77,26 +77,24 @@
 }
 
 
-.img-popup-mobile{
+.img-popups-mobile{
     position: absolute;
-    width: 296px;
-    height: 399px;
-    left: -80px;
-    top: 145px;
-    transform: rotate(-10deg)
+    left: -100px;
+    top: 125px;
+    
 }
 
 
 
 
 @media screen and (min-width: 768px){
-.pop-up{
+.pop-ups{
     height: 414px;
     width: 516px;
     }
 
 
-.container-features{
+.container-feature{
     height: 88px;
     width: 297px;
     border-radius: 0px;
@@ -105,13 +103,13 @@
     }
 
 
-.svg-pop-up{
+.svg-pop-ups{
     width: 22px;
     height: 22px;
     }
 
 
-.container-title{
+.containers-titles{
     width: 276px;
     font-weight: 600;
     font-size: 24px;
@@ -122,14 +120,14 @@
     }
 
 
-.btn-pop-up{
+.btn-pop-ups{
     margin-bottom: 99px;
     width: 40px;
     height: 40px;
     }
 
 
-.text-container{
+.texts-containers{
     width: 309px;
     font-weight: 400;
     font-size: 18px;
@@ -138,7 +136,7 @@
     }
 
 
-.img-popup-mobile{
+.img-popups-mobile{
     height: 516.0000114753436px;
     width: 388px;
     left: -120px;
