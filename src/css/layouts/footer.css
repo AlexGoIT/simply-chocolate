@@ -92,12 +92,12 @@ padding-top: 32px;
   display: block;
   height: 1px;
   width: 20px;
-  top: 28px;
+  top: 15px;
   left: 0;
   margin-top: 8px;
   background-color:#FD9222;
   background: transparent;
-  transition: opacity var(--timing-function);
+  transition: background-color var(--timing-function);
 }
 
 .footer-nav-link:hover::after {
