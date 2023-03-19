@@ -12,7 +12,6 @@
     
    } 
 
-
 .pop-ups{
     width: 311px;
     height: 350px;
@@ -40,8 +39,6 @@
     margin-bottom: 42px;
 }
 
-
-
 .containers-titles{
     color: #FCF1E0;
     font-weight: 600;
@@ -58,6 +55,7 @@
 .texts-containers{
     color: #FFFFFF;
     width: 219px;
+    width: 190px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -79,8 +77,6 @@
     
     
 }
-
-
 
 .img-popups-mobile{
     position: absolute;
