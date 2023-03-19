@@ -6,6 +6,10 @@
 .footer .title {
   color: #fff;
   margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .footer .title .slogan {
@@ -18,12 +22,12 @@
 }
 
 .footer .wrap-contact-us .insta {
-  stroke: #fff;
+  stroke: #FFFFFF;
   fill: transparent;
 }
 
 .footer .contact-us {
-  color: #fff;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
@@ -55,9 +59,13 @@
 }
 
 .footer .list .list-item-link {
-  color: #fff;
+  color: #FFFFFF;
 }
 
+.contact-us-title {
+  font-size: 14px;
+  color: #FFFFFF;
+}
 
 @media (min-width: 768px) {
   .footer-wrap {
@@ -67,6 +75,8 @@
 
   .footer .title {
     max-width: 300px;
+    font-weight: 500;
+    font-size: 28px;
   }
 
   .footer .contact-us {
@@ -94,6 +104,14 @@
 @media (min-width: 1200px) {
   .footer .contact-us {
     margin-right: 65px;
+  }
+
+  .footer .title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-style: normal;
+    letter-spacing: -0.02em;
   }
 
   .footer .line {
