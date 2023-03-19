@@ -1,0 +1,165 @@
+/* ----------------- chocolate is loved ----------------- */
+
+@import 'swiper/css';
+
+.chocolate-is-loved {
+padding-bottom: 72px;    
+background-color: var(--body-background-color);
+}
+
+.container-review {
+margin-bottom: 32px;
+}
+
+.review-title {
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+margin-bottom: 32px;
+}
+
+.part-title {
+ color: var(--orange);   
+}
+
+.review-card {
+height: 200px;
+padding-top: 56px;
+padding-left: 18px;
+padding-bottom: 24px;
+padding-right: 18px;
+border: 1px solid rgba(17, 17, 17, 0.1);
+box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+border-radius: 15px;
+background: var(--bg-color-light);
+}
+
+.review-title-slider {
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+text-align: center;
+margin-bottom: 24px;
+}
+
+.review-image {
+position: absolute;
+border-radius: 50%;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.review-swiper {
+/* copy from original swiper START*/
+margin-left: auto;
+margin-right: auto;
+position: relative;
+overflow: hidden;
+list-style: none;
+padding: 0;
+z-index: 1;
+display: block;
+/* copy from original swiper END*/
+
+padding-top: 40px;
+}
+
+.review-paragraph {
+text-align: center;
+}
+
+.review-button {
+display: block;
+width: 165px;
+height: 41px;  
+border: 1px solid var(--button-bg-normal-light-theme);
+border-radius: 100px;
+margin-right: auto;
+margin-left: auto;
+background-color: var(--body-background-color);
+font-weight: 600;
+line-height: 1.2;
+text-align: center;
+
+transition: var(--timing-function);
+transition-property: background-color, color;
+}
+
+.review-button:hover,
+.review-button:focus {
+background-color: var(--button-bg-normal-light-theme);
+color: var(--button-font-normal-light-theme);
+}
+
+.review-swiper-pagination {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 13px;
+}
+
+.review-swiper-pagination .swiper-pagination-bullet {
+width: 13px;
+height: 13px;
+border-radius: 50%;
+background-color: rgba(17, 17, 17, 0.1);
+cursor: pointer;
+}
+
+.review-swiper-pagination .swiper-pagination-bullet-active {
+width: 28px;
+border-radius: 13px;
+background-color: var(--button-font-active-light-theme);
+}
+
+@media screen and (min-width: 768px) {
+
+.chocolate-is-loved {
+    padding-bottom: 100px;
+    }
+
+.container-review {
+    margin-bottom: 50px;    
+    }
+
+ .review-title {
+    margin-bottom: 49px;
+    font-size: 24px;
+    line-height: 1.17;
+    }
+  .review-card {
+    padding-right: 14px;
+    padding-left: 14px;
+    }
+  .review-swiper-pagination {
+    margin-top: 31px;
+    }
+  .review-button {
+    width: 222px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 1.22;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .chocolate-is-loved {
+    padding-bottom: 128px;
+    }
+    
+    .review-card {
+    padding-right: 24px;
+    padding-left: 24px;
+    }
+}
+
+
+
+
+
+
