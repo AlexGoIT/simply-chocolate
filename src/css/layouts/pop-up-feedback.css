@@ -1,4 +1,8 @@
-.popup-thankyou20-section{
+
+
+
+
+.popup-feedback-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +14,11 @@
     visibility: hidden;
     pointer-events: none;
     
+    
    } 
 
 
-.pop-ups{
+.pop-up{
     width: 311px;
     height: 350px;
     position: fixed;
@@ -27,7 +32,7 @@
 }
 
 
-.btn-pop-ups{
+.btn-pop-up{
     background-color: #FCF1E0;
     border: none;
     border-radius: 50%;
@@ -41,7 +46,7 @@
 }
 
 
-.containers-titles{
+.container-title{
     color: #FCF1E0;
     font-weight: 600;
     font-size: 20px;
@@ -54,9 +59,9 @@
 }
 
 
-.texts-containers{
+.text-container{
     color: #FFFFFF;
-    width: 219px;
+    width: 190px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -64,14 +69,14 @@
 }
 
 
-.container-feature{
+.container-features{
     margin-left: 40px;
     margin-right: 8px;
     position: relative;
 }
 
 
-.svg-pop-ups{
+.svg-pop-up{
     stroke: #F16529;
     width: 22px;
     height: 22px;
@@ -80,24 +85,26 @@
 }
 
 
-.img-popups-mobile{
+.img-popup-mobile{
     position: absolute;
-    left: -100px;
-    top: 125px;
-    
+    width: 296px;
+    height: 399px;
+    left: -80px;
+    top: 145px;
+    transform: rotate(-10deg)
 }
 
 
 
 
 @media screen and (min-width: 768px){
-.pop-ups{
+.pop-up{
     height: 414px;
     width: 516px;
     }
 
 
-.container-feature{
+.container-features{
     height: 88px;
     width: 297px;
     border-radius: 0px;
@@ -106,13 +113,13 @@
     }
 
 
-.svg-pop-ups{
+.svg-pop-up{
     width: 22px;
     height: 22px;
     }
 
 
-.containers-titles{
+.container-title{
     width: 276px;
     font-weight: 600;
     font-size: 24px;
@@ -123,15 +130,15 @@
     }
 
 
-.btn-pop-ups{
+.btn-pop-up{
     margin-bottom: 99px;
     width: 40px;
     height: 40px;
     }
 
 
-.texts-containers{
-    width: 280px;
+.text-container{
+    width: 298px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -139,7 +146,7 @@
     }
 
 
-.img-popups-mobile{
+.img-popup-mobile{
     height: 516.0000114753436px;
     width: 388px;
     left: -120px;
@@ -148,3 +155,8 @@
     transform: rotate(-5deg);
     }
 }
+
+
+
+
+
