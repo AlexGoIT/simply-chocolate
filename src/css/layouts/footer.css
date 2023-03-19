@@ -30,7 +30,7 @@
 }
 
 .footer .wrap-contact-us .insta:is(:hover, :focus) {
-  color:#FD9222;
+  stroke:#FD9222;
 
 }
 
@@ -135,7 +135,7 @@
   margin-left: 19px;
 }
 .footer .wrap-contact-us .insta:is(:hover, :focus) {
-  color: #FD9222;
+  stroke: #FD9222;
 
 }
 }
