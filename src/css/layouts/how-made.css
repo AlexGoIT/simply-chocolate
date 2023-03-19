@@ -71,7 +71,7 @@
   color: var(--black);
 }
 .howmade-list {
-  list-style: disc inside url(/src/images/how-made/icon-piont-list\ .jpg);
+  list-style: disc outside url(../../images/how-made/icon-piont-list\ .svg);
 }
 .howmade-item {
   font-weight: 400;
