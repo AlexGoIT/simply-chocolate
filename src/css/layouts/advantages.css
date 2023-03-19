@@ -1,0 +1,172 @@
+
+.advantages {
+    background-color:#1E1823;
+    padding-top: 29px;
+    padding-bottom: 36px;
+}
+
+.advantages-block{
+    margin-bottom: 20px;
+}
+.advantages-block:last-child{
+margin-bottom: 0;
+}
+
+.advantages-icon-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+}
+
+.advantages-icon {
+    fill: #FD9222;
+}
+ 
+.advantages-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.advantages-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        margin-inline: auto;
+    }
+
+.advantages-text {
+  width: 308px;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding-top: 100px;
+    }
+
+    .container {
+        width: 768px;
+        padding-inline: 32px;
+    }
+
+    .advantages{
+        padding-top: 59px;
+        padding-bottom: 85px;
+    }
+
+    .advantages-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages-block:first-child{
+        margin-right: 60px;
+        margin-bottom: 41px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 128px;
+    }
+
+    .advantages {
+        padding-top: 59px;
+        
+    }
+
+    .container {
+        width: 1200px;
+    }
+
+    .advantages-desk {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+
+         .advantages-block:first-child {
+            position: relative;
+             margin-right: 88px;
+             margin-bottom: 0;
+         }
+
+    .advantages-block {
+        position: relative;
+        margin-right: 88px;
+        margin-bottom: 0;
+    }
+
+   
+
+
+    .advantages-block:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .line::after {
+    content: " ";
+    background: rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 124px;
+    top: 55px;
+    left: 330px;
+    position: absolute;
+    }
+
+
+    /* .advantages-block:first-child:after {
+        content: " ";
+        background: rgba(255, 255, 255, 0.5);
+        width: 1px;
+        height: 124px;
+        top: 55px;
+        left: 330px;
+        position: absolute;
+    } */
+
+                .create-line-left {
+                    padding-left: 20px;
+                    /* необходим для формирования позиций линии */
+                    position: relative;
+                    /* весь блок будет занимать ширину по размеру контента в нём */
+                    display: inline-block;
+                }
+        
+        
+        
+                .create-line-left:after {
+                    content: " ";
+                    background: #33CCFF;
+                    width: 150px;
+                    height: 1px;
+                    /* располагаем линию сверху от текста */
+                    top: 25px;
+                    /* включаем абсолютное позиционирование относительно блока с relative */
+                    position: absolute;
+                }
+   
+}
