@@ -70,9 +70,11 @@
   font-weight: 600;
   line-height: 1.29;
 }
-.nuts-chocolate,
+.nuts-chocolate {
+  color: var(--text-color-dark-theme);
+}
 .milk-chocolate {
-  color: var(--text-color-dark-themr);
+  color: var(--text-color-dark-theme);
 }
 
 /* ======== O V E R L A Y ====================== */
@@ -118,7 +120,7 @@
 .btn-components:focus,
 .btn-components.current {
   background-color: var(--orange);
-  color: var(--text-color-dark-themr);
+  color: var(--text-color-dark-theme);
 }
 .btn-components.current:hover,
 .btn-components.current:focus {

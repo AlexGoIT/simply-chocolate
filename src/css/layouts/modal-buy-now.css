@@ -1,0 +1,336 @@
+/* Modal buy now */
+.modal-buy-now-backdrop{
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;   
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-buy-now{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 311px;
+    min-height: 1007px;    
+    top: 630px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:var(--body-background-color);
+    border-radius: 15px;
+    padding: 32px 24px;
+    overflow: hidden;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now{
+        width: 609px;
+        min-height: 1058px;        
+        padding: 48px;    
+    } 
+}
+.modal-buy-now-btn-close{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;    
+    border: none;
+    background: transparent;
+    top: 14px;
+    right: 14px;
+    stroke:  var( --icon-color-normal-light-theme);
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-btn-close{
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;       
+    } 
+}
+.modal-buy-now-btn-close:hover,
+.modal-buy-now-btn-close:focus{
+    stroke: var(--orange);
+}
+.modal-buy-now-title{ 
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.17;   
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    text-align: center;   
+}
+.modal-buy-now-title-accent{
+    color: var(--orange);  
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-title{      
+    font-size: 24px;
+    }
+}
+.modal-buy-now-cards-list{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin-bottom: 32px;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-cards-list{
+        display: flex;
+        gap: 16px;  
+        margin-bottom: 40px;   
+    }
+}
+.modal-buy-now-card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 231px;
+    height: 257px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    background: #FFFFFF;
+    border: 1px solid var(--dark-grey);
+    border-radius: 15px;  
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-card-item{        
+        width: 160px;
+        height: 196px;
+        padding-top: 24px;
+        padding-bottom: 18px; 
+    }
+}
+.modal-buy-now-card-link{
+    margin-bottom: 16px;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-card-link{
+        margin-bottom: 14px;
+    }
+}
+.modal-buy-now-card-weight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 33px;
+    background: #FAFAFA;
+    border: 1px solid var(--dark-grey);
+    border-radius: 100px;      
+}
+.pagination-wrap{
+    margin-bottom: 32px;
+    display: flex;
+    gap: 13px;
+}
+@media screen and (min-width:768px) {
+    .pagination-wrap{
+        display: none;      
+    }
+}
+.pagination-active{
+    background-color: var(--swiper-pagination-bullet-active-color);
+    border-radius: 6px;
+    width: 28px;
+    height: 13px;
+}
+.pagination{
+    background: var(--swiper-pagination-bullet-color);
+    border-radius: 100%;    
+    width: 13px;
+    height: 13px;
+}
+.modal-buy-now-form{
+    display: flex;
+    flex-direction: column; 
+    gap: 18px; 
+}
+.modal-by-now-form-input-desc{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.64;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+@media screen and (min-width:768px) {
+    .modal-by-now-form-input-desc{
+    font-size: 14px;
+    }
+}
+.modal-form-input-wrap{
+    margin-top: 8px;
+    display: flex;
+    gap: 14px;    
+}
+@media screen and (min-width:768px) {
+    .modal-form-input-wrap{
+        gap: 16px;    
+    }
+}
+.modal-buy-now-input{
+    background-color: transparent;    
+    width: 100%;
+    height: 45px; 
+    color: var( --secondary-text-color-light-theme); 
+    padding: 14px 18px;
+    border: 1.5px solid var(--dark-grey);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;    
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: var(--text-color-light-theme);
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-input{
+        height: 66px; 
+        font-size: 18px;   
+    }
+}
+.modal-buy-now-input-phone{
+    padding-left: 106px;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-input-phone{
+        padding-left: 177px;
+    }
+}
+.modal-buy-now-input:focus{
+    outline: none;
+    border-color: var(--orange);
+}
+.modal-buy-now-input:not(:focus):not(:placeholder-shown):valid{
+    border-color: green;
+}
+.modal-buy-now-input:not(:focus):not(:placeholder-shown):invalid{
+    border-color: red;
+}
+.modal-buy-now-form-input-relative{
+    position: relative;    
+}
+.modal-buy-now-icon-tel{
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 18px;
+    transform: translate(0, -50%);
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-icon-tel{
+        width: 32px;
+        height: 32px;
+        left: 24px; 
+    }
+}
+.modal-buy-now-input-master-card{
+    padding-right: 50px;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-input-master-card{
+        padding-right: 70px;
+    }
+}
+.modal-buy-now-icon-master-card{
+    width: 32px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translate(0, -50%);
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-icon-master-card{
+        width: 44px;
+        height: 30px;
+        right: 24px;
+    }
+}
+.modal-buy-now-phone-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 50%;
+    left: 41px;
+    transform: translate(0, -50%);       
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-left: 8px;
+}
+@media screen and (min-width:768px) {
+.modal-buy-now-phone-number{
+    gap: 32px;
+    left: 48px; 
+    font-size: 18px;  
+    margin-left: 18px;
+    }
+}
+.modal-buy-now-phone-number::after{
+    content: '';
+    display: block;
+    height: 25px;
+    width: 1.5px;
+    background-color: rgba(64, 64, 64, 0.3) ;
+}
+.modal-buy-now-comment-message{
+    background-color: transparent;
+    width: 100%;
+    height: 91px;
+    border-radius: 13px;
+    padding: 14px 18px;
+    resize: none;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    margin-top: 8px;
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-comment-message{     
+        height: 137px;       
+        padding: 22px 24px;
+    }
+}
+.modal-buy-now-comment-message:focus{
+    outline: none;
+    border-color: var(--orange);
+}
+.modal-buy-now-btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 41px;      
+    font-weight: 600;   
+    line-height: 1.2;
+    border: none;   
+    color: var( --button-font-normal-light-theme);
+    background:var(--button-bg-normal-light-theme);
+    border-radius: 100px;
+    transition-timing-function:var( --timing-function);
+}
+@media screen and (min-width:768px) {
+    .modal-buy-now-btn-submit{  
+        width: 133px;
+        height: 45px;    
+    }
+}
+.modal-buy-now-btn-submit:is(:hover,:focus){
+    background: var( --button-bg-active-light-theme) ;
+    color: var(--button-font-active-light-theme);
+}
