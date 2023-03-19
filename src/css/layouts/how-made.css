@@ -1,0 +1,169 @@
+/* -------------------------How-it's-Made*/
+.section-howmade {
+  padding-top: 72px;
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.howmade-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.title-color-akcent {
+  color: var(--orange);
+}
+.howmade-video-box {
+  position: relative;
+  width: 335px;
+  max-width: 100%;
+  height: 500px;
+  max-height: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-image: url(../../images/how-made/how_made-poster-mob.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .howmade-video-box {
+    background-image: url(../../images/how-made/how_made-poster-mob@2x.jpg);
+  }
+}
+.howmade-video-play {
+  width: 100%;
+  height: 100%;
+}
+
+.howmade-text {
+  padding-top: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 20px;
+}
+.howmade-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  margin-bottom: 20px;
+  color: var(--black);
+}
+.howmade-list {
+  list-style: disc outside url(../../images/how-made/icon-point-list.svg);
+  margin-left: 16px;
+}
+.howmade-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+.howmade-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+/* ------------------------------------Tablet-- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-howmade {
+    padding-top: 100px;
+    padding-bottom: 32px;
+    max-width: 768px;
+  }
+  .howmade-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-bottom: 50px;
+  }
+  .howmade-video-box {
+    width: 614px;
+    height: 400px;
+    background-image: url(../../images/how-made/how_made-poster-tabl.jpg);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .howmade-video-box {
+      background-image: url(../../images/how-made/how_made-poster-tabl@2x.jpg);
+      background-size: 614px 400px;
+    }
+  }
+  .howmade-video-play {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howmade-text {
+    width: 614px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 102px;
+    padding-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .howmade-subtitle {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+  .howmade-item {
+    max-width: 464px;
+  }
+}
+
+/* ------------------------------------Desktop-- */
+@media screen and (min-width: 1200px) {
+  .section-howmade {
+    padding-top: 128px;
+    padding-bottom: 0;
+    max-width: 1200px;
+  }
+  .howmade-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-bottom: 50px;
+  }
+  .howmade-box {
+    display: inline-flex;
+  }
+  .howmade-video-box {
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+    background-image: url(../../images/how-made/how_made-poster-desk.jpg);
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .howmade-video-box {
+      background-image: url(../../images/how-made/how_made-poster-desk@2x.jpg);
+    }
+  }
+  .option {
+    display: none;
+  }
+  .howmade-text {
+    padding: 32px;
+    max-width: 516px;
+  }
+  .howmade-subtitle {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+  .howmade-item {
+    color: var(--black);
+  }
+  .howmade-item:not(:last-child) {
+    max-width: 409px;
+  }
+}
