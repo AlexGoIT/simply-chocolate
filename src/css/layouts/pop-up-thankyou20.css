@@ -6,9 +6,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
     
    } 
 
@@ -148,5 +148,15 @@
     top: 100px;
     border-radius: 0px;
     transform: rotate(-5deg);
+    }
+}
+
+@media screen and (max-width: 350px){
+    .pop-ups{
+        width: 250px;
+    }
+
+    .texts-containers{
+        width: 180px;
     }
 }
