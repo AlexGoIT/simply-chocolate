@@ -40,6 +40,10 @@
     margin-bottom: 42px;
 }
 
+.btn-pop-ups:hover{
+    background-color: #FD9222;
+    
+}
 
 .containers-titles{
     color: #FCF1E0;
@@ -77,6 +81,9 @@
     height: 22px;
     
     
+}
+.btn-pop-ups .svg-pop-ups:hover{
+stroke: #FFFFFF;
 }
 
 
