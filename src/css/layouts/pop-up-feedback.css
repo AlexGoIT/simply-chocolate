@@ -1,7 +1,4 @@
 
-
-
-
 .popup-feedback-section{
     display: flex;
     justify-content: center;
@@ -94,12 +91,61 @@
     transform: rotate(-10deg)
 }
 
+@media screen and (min-width: 768px){
+.pop-up{
+    height: 414px;
+    width: 516px;
+    }
 
 
+.container-features{
+    height: 88px;
+    width: 297px;
+    border-radius: 0px;
+    margin-left: 170px;
+    margin-right: 50px;
+    }
 
 
+.svg-pop-up{
+    width: 22px;
+    height: 22px;
+    }
 
 
+.container-title{
+    width: 276px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    }
 
 
+.btn-pop-up{
+    margin-bottom: 99px;
+    width: 40px;
+    height: 40px;
+    }
 
+
+.text-container{
+    width: 298px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    }
+
+
+.img-popup-mobile{
+    height: 516.0000114753436px;
+    width: 388px;
+    left: -120px;
+    top: 100px;
+    border-radius: 0px;
+    transform: rotate(-5deg);
+    }
+}

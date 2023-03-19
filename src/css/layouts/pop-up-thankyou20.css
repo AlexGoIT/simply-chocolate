@@ -12,12 +12,6 @@
     
    } 
 
-
-
-
-
-
-
 .pop-ups{
     width: 311px;
     height: 350px;
@@ -45,7 +39,6 @@
     margin-bottom: 42px;
 }
 
-
 .containers-titles{
     color: #FCF1E0;
     font-weight: 600;
@@ -61,6 +54,7 @@
 
 .texts-containers{
     color: #FFFFFF;
+    width: 219px;
     width: 190px;
     font-weight: 400;
     font-size: 14px;
@@ -83,7 +77,6 @@
     
     
 }
-
 
 .img-popups-mobile{
     position: absolute;
@@ -153,3 +146,14 @@
     transform: rotate(-5deg);
     }
 }
+
+@media screen and (max-width: 350px){
+    .pop-ups{
+        width: 250px;
+    }
+
+    .texts-containers{
+        width: 180px;
+    }
+}
+
