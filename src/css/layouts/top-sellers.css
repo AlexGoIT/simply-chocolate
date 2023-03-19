@@ -95,4 +95,13 @@ margin: 0 0 0 auto;
 .about-sellers .about-sellers-item:nth-child(2) .sellers-btn {
     display:none;
 }
+    .title-sellers {
+        font-size: 24px;
+
+    }
+
+    .sellers-btn:is(:hover, :focus) {
+background-color: #FCF1E0;
+color :#FD9222;
+}
 }
