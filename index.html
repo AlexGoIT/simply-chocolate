@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chokolate/assets/index-664a7230.js"></script>
-    <link rel="stylesheet" href="/simply-chokolate/assets/index-7f33d2c8.css">
+    <link rel="stylesheet" href="/simply-chokolate/assets/index-14cd4fbb.css">
   </head>
   <body>
     <header>
@@ -122,7 +122,6 @@
             </ul>                       
         </div>
     </div>
-      
     </header>
     <main>
       <section class="section-hero">
@@ -539,7 +538,100 @@
     <footer>
       
     </footer>
-   <div class="backdrop is-hidden" >
+    <div class="modal-buy-now-backdrop" >
+    <div class="modal-buy-now">
+        <button class="modal-buy-now-btn-close" type="button">
+            <svg width="24px" height="24px">
+                <use href="/simply-chokolate/assets/icons-1d4c5174.svg#icon-x-close"></use>
+            </svg>
+        </button>
+        <p class="modal-buy-now-title">Buy<span class="modal-buy-now-title-accent">&nbsp;now</span> </p>
+        <ul class="modal-buy-now-cards-list">
+            <li class="modal-buy-now-card-item">
+                <a href="" class="modal-buy-now-card-link">
+                    <img
+                    srcset="/simply-chokolate/assets/buy-now-desktop-1@2x-min-75fae25d.png "
+                        src="/simply-chokolate/assets/buy-now-desktop-1-min-608b76a4.png" 
+                        alt="chocolate"
+                        width="120"
+                        height="107" 
+                    >               
+                </a>
+                <p class="modal-buy-now-card-weight">100g</p>       
+            </li>
+            <li class="modal-buy-now-card-item">
+                <a href="" class="modal-buy-now-card-link">
+                    <img
+                    srcset="/simply-chokolate/assets/buy-now-desktop-2@2x-min-d5067f2d.png "
+                    src="/simply-chokolate/assets/buy-now-desktop-2-min-67e9956d.png" 
+                        alt="chocolate"
+                        width="120"
+                        height="107"    
+                    > 
+                </a>
+                <p class="modal-buy-now-card-weight">200g</p>
+            </li>
+            <li class="modal-buy-now-card-item">
+                <a href="" class="modal-buy-now-card-link">
+                    <img
+                    srcset="/simply-chokolate/assets/buy-now-desktop-3@2x-min-e7248f1b.png "
+                    src="/simply-chokolate/assets/buy-now-desktop-3-min-aa7d4998.png" 
+                        alt="chocolate"
+                        width="120"
+                        height="107"    
+                    > 
+                </a>
+                <p class="modal-buy-now-card-weight">300g</p>
+            </li>
+        </ul>
+        <div class="pagination-wrap">
+            <div class="pagination-active"></div>
+            <div class="pagination"></div>
+            <div class="pagination"></div>
+        </div>
+        <form class="modal-buy-now-form">
+            <label class="modal-form-field">
+                <span class="modal-by-now-form-input-desc">Personal information</span>               
+                <span class="modal-form-input-wrap">                 
+                    <input type="text" name="user-name" placeholder="Name" id="name-label" class="modal-buy-now-input" required pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>
+                    <input type="text" name="user-name" placeholder="Surname" id="name-label" class="modal-buy-now-input" required pattern="[a-z A-Z А-Я а-я]+" minlength="2"/>   
+                </span>             
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-by-now-form-input-desc">Email</span>               
+                <span class="modal-form-input-wrap">
+                    <input type="text" id="email-user" placeholder="Enter your email" name="user-email" class="modal-buy-now-input" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"/> 
+                </span>             
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-by-now-form-input-desc">Phone number</span>               
+                <span class="modal-form-input-wrap modal-buy-now-form-input-relative" >
+                    <input type="tel" id="user-phone" placeholder="Phone number" name="user-email" class="modal-buy-now-input modal-buy-now-input-phone" id="phone-user" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" /> 
+                    <svg  class="modal-buy-now-icon-tel">
+                        <use href="/simply-chokolate/assets/icons-1d4c5174.svg#icon-flag-ua"></use>
+                    </svg>
+                    <span class="modal-buy-now-phone-number">+380</span>
+                </span>             
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-by-now-form-input-desc">Card number</span>               
+                <span class="modal-form-input-wrap modal-buy-now-form-input-relative" >
+                    <input type="text" name="user-phone" placeholder="Enter  card" class="modal-buy-now-input modal-buy-now-input-master-card" id="phone-user" required pattern="[0-9]" title="xxxx-xxxx-xxxx-xxxx"/>
+                    <svg class="modal-buy-now-icon-master-card">
+                        <use href="/simply-chokolate/assets/icons-1d4c5174.svg#icon-mastercard"></use>
+                    </svg>
+                </span>             
+            </label>
+            <label class="modal-form-field">
+                <span class="modal-by-now-form-input-desc">Comment</span> 
+                <textarea name="user-message" placeholder="Enter text" id="comment-user" class="modal-buy-now-comment-message"></textarea>             
+            </label>    
+            <button type="submit" class="modal-buy-now-btn-submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+    <div class="backdrop is-hidden" >
   <div class="modal">
   <button class="modal-btn" type="button">
   <svg width="24px" height="24px">
