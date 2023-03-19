@@ -92,11 +92,10 @@ padding-top: 32px;
   display: block;
   height: 1px;
   width: 20px;
-  top: 15px;
+  top: 18px;
   left: 0;
   margin-top: 8px;
-  background-color:#FD9222;
-  background: transparent;
+  background-color: transparent;
   transition: background-color var(--timing-function);
 }
 
