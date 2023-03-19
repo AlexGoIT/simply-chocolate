@@ -1,3 +1,64 @@
 .modal-thx {
+    width: 311px;
+    /* top: 0;
+    left: 0; */
     color: aliceblue;
+    margin: 0 auto;
+}
+
+.thx {
+    width: 311px;
+    height: 360px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 5px solid rgba(192, 25, 25, 0.3);
+}
+
+.thx-img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.thx-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111111;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.big {
+    color: orange;
+}
+
+.serch {
+    margin-top: 30px;
+}
+
+.navbar-form {
+    position: relative;
+}
+
+.subscribe-input {
+    margin-left: 20px;
+    height: 34px;
+    border-radius: 20px;
+}
+
+.serch-btn {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    position: absolute;
+    right: 116px;
+    border: none;
+    cursor: pointer;
+    background: #FD9222;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
 }
