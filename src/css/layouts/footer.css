@@ -83,6 +83,10 @@ padding-top: 32px;
   color: #FFFFFF;
 }
 
+.insta-block {
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .footer-wrap {
     display: flex;
@@ -150,7 +154,7 @@ padding-top: 32px;
 .footer .wrap-contact-us .insta {
   margin-left: 19px;
 }
-.footer .wrap-contact-us .insta:is(:hover, :focus) {
+.footer .wrap-contact-us .insta:is(:hover,:focus) {
   stroke: #FD9222;
 }
 
