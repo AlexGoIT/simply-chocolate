@@ -1,99 +1,125 @@
 /* Header styles */
-.header-container{   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 14px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
 
-@media screen and (min-width:1200px) {
-    .header-container{   
-        margin-bottom: 32px;
-    }  
-}
-.header-navigation{
-    display: flex;
-    gap: 188px;
-}
-.logo-desktop{
-    display: flex;
-    gap: 6px;
-    align-items: center;
-}
-.logo-text{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;    
-}
-.logo-text-part-one{
-    font-style: italic;   
-}
-.logo-icon-desktop{
-    stroke: var(--icon-color-active);
-    fill: none;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    gap: 24px;   
-}
-@media screen and (max-width:1199px) {
-    .menu{
-        display: none;   
-    }   
-}
-.text-header{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-}
-.text-header-hover{   
+@media screen and (min-width: 1200px) {
+  .header-container {
+    margin-bottom: 32px;
+  }
+
+  /* -----------MENU HOVER, FOCUS------------ */
+
+  .menu-list-link {
+    transition-property: color, font-weight;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-list-link:is(:hover, :focus) {
+    font-weight: 600;
     color: var(--orange);
+  }
+
+  .menu-list-link::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    margin-top: 8px;
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-list-link:is(:hover, :focus)::after {
+    background-color: var(--orange);
+  }
 }
-.social-list{
-    display: flex;
-    gap: 18px;
+.header-navigation {
+  display: flex;
+  gap: 188px;
+}
+.logo-desktop {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.logo-text-part-one {
+  font-style: italic;
+}
+.logo-icon-desktop {
+  stroke: var(--icon-color-active);
+  fill: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .menu {
+    display: none;
+  }
+}
+.text-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.text-header-hover {
+  color: var(--orange);
+}
+.social-list {
+  display: flex;
+  gap: 18px;
 }
 .social-icon-desktop-tablet,
-.social-mobile-icon{
-    fill: none;  
+.social-mobile-icon {
+  fill: none;
 }
-.social-icon-desktop-tablet{
-    stroke: var(--black);
-    stroke-width: 2.666px;
+.social-icon-desktop-tablet {
+  stroke: var(--black);
+  stroke-width: 2.666px;
 }
 .social-icon-desktop-tablet:hover,
-.social-icon-desktop-tablet:focus{
-    stroke: var(--icon-color-active);
-}   
-@media screen and (max-width:1199px) {
-    .social-list{
-        display: none;   
-    }   
+.social-icon-desktop-tablet:focus {
+  stroke: var(--icon-color-active);
 }
-.btn-mobile-menu-open{
-    display: block;
-    background: none;
-    border: none;
-    padding: 0;
+@media screen and (max-width: 1199px) {
+  .social-list {
+    display: none;
+  }
 }
-.mobile-menu-open-icon{
-    stroke: var(--icon-color-normal-light-theme);
-    width: 28px;
-    height: 28px;
+.btn-mobile-menu-open {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
 }
-@media screen and (min-width:768px) {
-    .mobile-menu-open-icon{
-        width: 32px;
-        height: 32px;
-    }  
+.mobile-menu-open-icon {
+  stroke: var(--icon-color-normal-light-theme);
+  width: 28px;
+  height: 28px;
 }
-@media screen and (min-width:1200px){
-    .btn-mobile-menu-open{
-        display: none;
-    }
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-mobile-menu-open {
+    display: none;
+  }
 }
 /*==========HEADER==========*/
