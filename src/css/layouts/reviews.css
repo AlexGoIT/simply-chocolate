@@ -1,7 +1,6 @@
 /* ----------------- chocolate is loved ----------------- */
 
-.chocolate-is-loved {
-padding-bottom: 72px;    
+.chocolate-is-loved {  
 background-color: var(--body-background-color);
 }
 
@@ -117,10 +116,6 @@ background-color: var(--button-font-active-light-theme);
 
 @media screen and (min-width: 768px) {
 
-.chocolate-is-loved {
-    padding-bottom: 100px;
-    }
-
 .container-review {
     margin-bottom: 50px;    
     }
@@ -146,10 +141,6 @@ background-color: var(--button-font-active-light-theme);
 }
 
 @media screen and (min-width: 1200px) {
-    .chocolate-is-loved {
-    padding-bottom: 128px;
-    }
-    
     .review-card {
     padding-right: 24px;
     padding-left: 24px;
