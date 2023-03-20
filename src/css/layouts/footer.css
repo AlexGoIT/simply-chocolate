@@ -1,11 +1,10 @@
 .footer {
   background-color: #1e1823;
-  padding-block: 50px;
+  padding-block: 32px;
 }
 
 .footer-title {
-  color: #fff;
-  margin-bottom: 32px;
+  color: #fff;  
   font-size: 24px;
   line-height: 1.2;
   font-weight: 500;
@@ -25,8 +24,7 @@
 
 .footer-address {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 32px;
+  justify-content: space-between; 
   font-style: normal;
 }
 
@@ -65,8 +63,7 @@
   padding-left: 0;
 }
 
-.footer-nav-item {
-  margin-bottom: 18px;
+.footer-nav-item {  
   position: relative;
 }
 
@@ -105,6 +102,10 @@
 }
 
 @media (min-width: 768px) {
+  .footer {    
+    padding-block: 50px;
+  }
+
   .footer-wrap {
     display: flex;
     justify-content: space-between;
@@ -119,11 +120,11 @@
   }
 
   .footer-icons {
-    gap: 0;
+    gap: 18px;
   }
 
   .contact-us {
-    margin-right: 52px;
+    margin-right: 50px;
   }
 
   .contact-us-link:is(:hover, :focus) {
@@ -145,18 +146,12 @@
   .footer-navigation {
     padding-top: 24px;
   }
-  .insta {
-    margin-left: 19px;
-  }
 
-  .footer-address {
-    padding-bottom: 50px;
-  }
 }
 
 @media (min-width: 1200px) {
   .contact-us {
-    margin-right: 65px;
+    margin-right: 63px;
   }
 
   .footer-title {
@@ -171,14 +166,9 @@
   .footer-navigation {
     margin-top: 58px;
   }
-  .insta {
-    margin-left: 19px;
-  }
+
   .insta:is(:hover, :focus) {
     stroke: #fd9222;
   }
 
-  .footer-address {
-    padding-bottom: 0;
-  }
 }
