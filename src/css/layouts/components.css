@@ -67,6 +67,7 @@
 .coffee-chocolate,
 .nuts-chocolate,
 .milk-chocolate {
+  text-transform: uppercase;
   font-weight: 600;
   line-height: 1.29;
 }
@@ -163,7 +164,7 @@
 
   .title-components {
     font-size: 24px;
-    line-height: 1.7;
+    line-height: 1.17;
     margin-bottom: 28px;
   }
   .tex-components {
