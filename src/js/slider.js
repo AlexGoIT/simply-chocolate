@@ -34,7 +34,7 @@ const productsSwiper = new Swiper('.products-swiper', {
   
   // If we need pagination
   pagination: {
-    el: '.products-swiper-pagination',
+    el: '.review-swiper-pagination',
     clickable: true,
   },
 
@@ -45,11 +45,11 @@ const productsSwiper = new Swiper('.products-swiper', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
     },
     // when window width is >= 1200px
     1200: {
-      slidesPerView: 8,
+      slidesPerView: 4,
     }
   },
 
