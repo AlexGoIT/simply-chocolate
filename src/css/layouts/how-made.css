@@ -47,6 +47,8 @@
   padding-left: 14px;
   padding-right: 14px;
   padding-bottom: 20px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
 }
 .howmade-subtitle {
   font-weight: 600;
