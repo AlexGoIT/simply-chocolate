@@ -1,15 +1,22 @@
 /* Header styles */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--body-background-color);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 14px;
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 
   /* -----------MENU HOVER, FOCUS------------ */
@@ -84,14 +91,17 @@
 }
 .social-icon-desktop-tablet,
 .social-mobile-icon {
-  fill: none;
+  fill: none; 
 }
 .social-icon-desktop-tablet {
   stroke: var(--black);
   stroke-width: 2.666px;
 }
+.social-list-link{
+display: block;
+}
 .social-icon-desktop-tablet:hover,
-.social-icon-desktop-tablet:focus {
+.social-list-link:focus > .social-icon-desktop-tablet {
   stroke: var(--icon-color-active);
 }
 @media screen and (max-width: 1199px) {
