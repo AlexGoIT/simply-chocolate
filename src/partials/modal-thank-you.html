@@ -1,32 +1,50 @@
-<div class="backdrop" data-modal="3">
-    <div class="thx">
-        <button class="close-thx" type="button">
-            <svg class="close-thx-icon">
-                <use href="./images/icons.svg#icon-x-close"></use>
-            </svg>
-        </button>
-        <picture>
-            <source srcset="./images/modal-thank-you/choco-chocomobile-1x.jpg 1x, ./images/modal-thank-you/choco-chocomobile-2x.jpg 2x"
-                media="(max-width: 767px)">
-            <source srcset="./images/modal-thank-you/choco-chocotablet-1x.jpg 1x, ./images/modal-thank-you/choco-chocotablet-2x.jpg 2x"
-                media="(min-width: 768px)">
-            <img src="./images/modal-thank-you/choco-chocomobile-1x.jpg" alt="chocolate" class="thx-img">
-        </picture>
-        <div class="thx-content">
-            <h3 class="thx-text">
-                Explore our <br> <span class="thx-big">new chocolate</span> first!
-            </h3>
 
-            <div class="thx-email">
-                <form class="thx-form">
+  <div class="thx modal-form" data-modal="3">
+    <button class="close-thx js-modal-close" type="button">
+      <svg class="close-thx-icon">
+        <use href="./images/icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="
+          ./images/modal-thank-you/choco-chocomobile-1x.jpg 1x,
+          ./images/modal-thank-you/choco-chocomobile-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./images/modal-thank-you/choco-chocotablet-1x.jpg 1x,
+          ./images/modal-thank-you/choco-chocotablet-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./images/modal-thank-you/choco-chocomobile-1x.jpg"
+        alt="chocolate"
+        class="thx-img"
+      />
+    </picture>
+    <div class="thx-content">
+      <h3 class="thx-text">
+        Explore our <br />
+        <span class="thx-big">new chocolate</span> first!
+      </h3>
 
-                    <input class="thx-input" type="email" name="user_email" pattern="[a-zA-Zа-яА-ЯіІїЇ\s]+"
-                        placeholder="Enter your email" required>
+      <div class="thx-email">
+        <form class="thx-form">
+          <input
+            class="thx-input"
+            type="email"
+            name="user_email"
+            pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+            placeholder="Enter your email"
+            required
+          />
 
-                    <button class="thx-btn" type="submit"> Submit</button>
-
-                </form>
-            </div>
-        </div>
+          <button class="thx-btn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
-</div>
+  </div>

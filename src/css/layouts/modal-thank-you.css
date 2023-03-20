@@ -1,138 +1,130 @@
 .backdrop {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
+  /* position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
 }
 
 .thx {
-    width: 311px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px 15px 15px 15px;
-    background-color: var(--bg-color-light);
+  width: 311px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px 15px 15px 15px;
+  background-color: var(--bg-color-light);
 }
-
 
 .close-thx {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    background: none;
-    border: none;
-    right: 20px;
-    top: 21px;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  background: none;
+  border: none;
+  right: 20px;
+  top: 21px;
+  padding: 0;
 }
-
 
 .close-thx-icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--icon-color-normal-dark-theme);
+  width: 24px;
+  height: 24px;
+  stroke: var(--icon-color-normal-dark-theme);
 }
 
-
 .thx-img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .thx-content {
-    padding: 32px 24px;
+  padding: 32px 24px;
 }
 
 .thx-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--text-color-light-theme);
-    text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color-light-theme);
+  text-transform: uppercase;
 }
 
 .thx-big {
-    color: var(--icon-color-active);
+  color: var(--icon-color-active);
 }
 
 .thx-form {
-    position: relative;
-    margin-top: 24px;
+  position: relative;
+  margin-top: 24px;
 }
 
-
 .thx-input {
-    height: 40px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    border-radius: 20px;
-    padding-left: 18px;
+  height: 40px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 20px;
+  padding-left: 18px;
 }
 
 .thx-btn {
-    position: absolute;
-    right: 0;
-    border: none;
-    cursor: pointer;
-    background:var(--icon-color-active);
-    color: var(--bg-color-light);
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
+  position: absolute;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  background: var(--icon-color-active);
+  color: var(--bg-color-light);
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 .thx-btn:hover,
 .thx-btn:focus {
-    color: var(--icon-color-active);
-    background-color: var(--button-bg-active-light-theme);
+  color: var(--icon-color-active);
+  background-color: var(--button-bg-active-light-theme);
 }
 
-
 @media screen and (min-width: 768px) {
+  .thx {
+    width: 538px;
+  }
 
-    .thx {
-        width: 538px;
-    }
+  .close-thx {
+    right: 31px;
+    top: 31px;
+  }
 
-    .close-thx {
-        right: 31px;
-        top: 31px;
-    }
+  .thx-content {
+    padding: 40px;
+  }
 
-  
+  .thx-text {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 
-    .thx-content {
-        padding: 40px;
-    }
+  .thx-form {
+    margin-top: 28px;
+  }
 
-    .thx-text {
-        font-size: 24px;
-        line-height: 1.16;
-    }
+  .thx-input {
+    width: 311px;
+    height: 52px;
+    border-radius: 26px;
+    padding-left: 24px;
+  }
 
-    .thx-form {
-        margin-top: 28px;
-    }
-
-    .thx-input {
-        width: 311px;
-        height: 52px;
-        border-radius: 26px;
-        padding-left: 24px;
-    }
-
-    .thx-btn {
-        width: 137px;
-        height: 52px;
-        border-radius: 26px;
-    }
-
+  .thx-btn {
+    width: 137px;
+    height: 52px;
+    border-radius: 26px;
+  }
 }
