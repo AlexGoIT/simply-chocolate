@@ -133,5 +133,9 @@
         stroke-width: 2.6667px;  
     }
 }
+.social-mobile-icon:hover,
+.social-mobile-link:focus > .social-mobile-icon {
+  stroke: var(--icon-color-active);
+}
 /*/social-icon*/
 /*/mobile-menu*/

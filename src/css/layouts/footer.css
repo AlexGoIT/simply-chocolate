@@ -36,8 +36,9 @@
   stroke-width: 2px;
 }
 
-.insta:is(:hover, :focus) {
-  stroke: #fd9222;
+.insta:hover,
+.footer-social-link:focus > .insta {
+  stroke: var(--icon-color-active);
 }
 
 .contact-us {

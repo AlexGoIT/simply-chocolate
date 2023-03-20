@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
       overlay      = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
   
-  console.log(overlay);
       
    /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             Нужно подстраховаться. */
         e.preventDefault();
 
-        console.log(item);
 
         /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
@@ -57,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }, false);
 
-    // overlay.addEventListener('click', function() {
-    //     document.querySelector('.modal-form.active').classList.remove('active');
-    //     this.classList.remove('active');
-    // });
+    overlay.addEventListener('click', function() {
+        document.querySelector('.modal-form.active').classList.remove('active');
+        this.classList.remove('active');
+    });
 
 }); // end ready
