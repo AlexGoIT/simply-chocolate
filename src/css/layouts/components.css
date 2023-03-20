@@ -1,8 +1,8 @@
-.section {
+.components-section {
   width: 100%;
   padding-top: 72px;
-  padding-bottom: 72px;
 }
+
 .title-components {
   font-weight: 600;
   font-size: 20px;
@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .components-section {
     padding-top: 100px;
   }
   .container {
@@ -196,7 +196,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .components-section {
     padding-top: 128px;
   }
 
