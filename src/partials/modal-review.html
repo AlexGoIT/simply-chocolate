@@ -1,54 +1,53 @@
-
-    <div class="modal-review modal-form" data-modal="2">
-      <button class="modal-btn js-modal-close" type="button">
-        <svg width="24px" height="24px">
-          <use href="./images/icons.svg#icon-x-close"></use>
-        </svg>
-      </button>
-      <h3 class="modal-title">
-        <span>leave a review</span>
-        <span>about <span class="akcent">our chocolate</span></span>
-      </h3>
-      <form class="modal-review-form">
-        <input
-          type="text"
-          name="user-name"
-          placeholder="Name"
-          id="name-label"
-          class="modal-input"
-          required
-          pattern="[a-z A-Z А-Я а-я]+"
-          minlength="2"
-        />
-        <input
-          type="text"
-          id="email-user"
-          placeholder="Enter your email"
-          name="user-email"
-          required
-          class="modal-input"
-        />
-        <div class="modal-form-input-wrapper">
-          <input
-            type="tel"
-            name="user-phone"
-            required
-            placeholder="Phone number"
-            class="modal-input-phone modal-input"
-            id="phone-user"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-          />
-          <svg width="23.69px" height="17.63px" class="modal-form-icon">
-            <use href="./images/icons.svg#icon-flag-ua"></use></svg
-          ><span class="phone-number">+380</span>
-        </div>
-        <textarea
-          name="user-message"
-          placeholder="Enter text"
-          id="comment-user"
-          class="comment-message"
-        ></textarea>
-        <button type="submit" class="modal-form-submit">Send</button>
-      </form>
+<div class="modal-review modal-form" data-modal="2">
+  <button class="modal-btn js-modal-close" type="button">
+    <svg width="24px" height="24px">
+      <use href="./images/icons.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal-title">
+    <span>leave a review</span>
+    <span>about <span class="akcent">our chocolate</span></span>
+  </h3>
+  <form class="modal-review-form">
+    <input
+      type="text"
+      name="user-name"
+      placeholder="Name"
+      id="name-label"
+      class="modal-input"
+      required
+      pattern="[a-zA-ZА-Яа-я]+"
+      minlength="2"
+    />
+    <input
+      type="text"
+      id="email-user"
+      placeholder="Enter your email"
+      name="user-email"
+      required
+      class="modal-input"
+    />
+    <div class="modal-form-input-wrapper">
+      <input
+        type="tel"
+        name="user-phone"
+        required
+        placeholder="Phone number"
+        class="modal-input-phone modal-input"
+        id="phone-user"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="xxx-xxx-xx-xx"
+      />
+      <svg width="23.69px" height="17.63px" class="modal-form-icon">
+        <use href="./images/icons.svg#icon-flag-ua"></use></svg
+      ><span class="phone-number">+380</span>
     </div>
+    <textarea
+      name="user-message"
+      placeholder="Enter text"
+      id="comment-user"
+      class="comment-message"
+    ></textarea>
+    <button type="submit" class="modal-form-submit">Send</button>
+  </form>
+</div>
