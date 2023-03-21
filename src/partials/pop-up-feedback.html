@@ -1,35 +1,37 @@
-<div class="popup-feedback-section modal-form" data-modal="5">
-  <div class="pop-up">
-    <button class="btn-pop-up js-modal-close">
-      <svg class="svg-pop-up" width="16" height="16">
-        <use href="./images/icons.svg#icon-x-close"></use>
-      </svg>
-    </button>
-    <div class="container-features">
-      <h2 class="container-title">thank you for your feedback!</h2>
-      <p class="text-container">We are so happy to hear from you!</p>
+<div class="backdrop" id="pop-up-feedback">
+  <div class="popup-feedback">
+    <div class="pop-up">
+      <button class="btn-pop-up js-modal-close">
+        <svg class="svg-pop-up" width="16" height="16">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <div class="container-features">
+        <h2 class="container-title">thank you for your feedback!</h2>
+        <p class="text-container">We are so happy to hear from you!</p>
+      </div>
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png,
+            ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802@2x.png
+          "
+        />
+        <source
+          media="(min-width:375px)"
+          srcset="
+            ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png,
+            ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802@2x.png
+          "
+        />
+        <img
+          src="./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png"
+          alt="chocolate"
+          style="width: auto"
+          class="img-popup-mobile"
+        />
+      </picture>
     </div>
-    <picture>
-      <source
-        media="(min-width:768px)"
-        srcset="
-          ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png,
-          ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802@2x.png
-        "
-      />
-      <source
-        media="(min-width:375px)"
-        srcset="
-          ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png,
-          ./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802@2x.png
-        "
-      />
-      <img
-        src="./images/pop-up-feedback/desktop/ezgif-1-2d3a67b8802.png"
-        alt="chocolate"
-        style="width: auto"
-        class="img-popup-mobile"
-      />
-    </picture>
   </div>
 </div>

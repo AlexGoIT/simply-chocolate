@@ -1,15 +1,12 @@
 /* Modal buy now */
 .modal-buy-now {
-  position: absolute;
-  z-index: 110;
+  width: 311px;
+  min-height: 1007px;
+  position: relative;
+  top: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 311px;
-  min-height: 1007px;
-  top: 630px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: var(--body-background-color);
   border-radius: 15px;
   padding: 32px 24px;
