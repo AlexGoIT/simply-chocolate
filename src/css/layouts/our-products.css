@@ -14,24 +14,7 @@
 .our-products-accent-text {
   color: var(--orange);
 }
-.our-products-cardc-wrap {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .our-products-cardc-wrap {
-    gap: 18px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-products-cardc-wrap {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+
 .our-products-card {
   width: 335px;
   min-height: 364px;
@@ -126,4 +109,13 @@
   border-radius: 100%;
   width: 13px;
   height: 13px;
+}
+
+.products-swiper {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
 }
