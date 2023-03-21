@@ -67,7 +67,7 @@
   line-height: 1.17;
   letter-spacing: -0.02em;
   margin-bottom: 18px;
-  color: var(secondary-text-color-light-theme);
+  color: var(--secondary-text-color-light-theme);
 }
 .our-products-price-buy-now {
   font-weight: 600;
