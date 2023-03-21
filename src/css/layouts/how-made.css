@@ -59,7 +59,7 @@
 }
 .howmade-list {
   list-style: disc outside url(../../images/how-made/icon-point-list.svg);
-  margin-left: 16px;
+  padding-left: 16px;
 }
 .howmade-item {
   font-weight: 400;
