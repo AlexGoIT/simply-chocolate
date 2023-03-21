@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-5449a8af.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-41ceabc5.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-f5d829a1.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-a020d9d3.css">
   </head>
   <body>
     <header class="header">
@@ -688,7 +688,7 @@
             srcset="/simply-chocolate/assets/3desk-ce8f8475.jpg 1x, /simply-chocolate/assets/3desk@2x-f25643e2.jpg 2x"
             media="(min-width: 1200px)"
           />
-          <img src="./images/top-sellers/desk.jpg" alt="Sweet" />
+          <img src="/simply-chocolate/assets/3desk-ce8f8475.jpg" alt="Sweet" />
         </picture>
         <button class="sellers-btn js-open-modal" type="button" data-modal="1">
           Buy now
@@ -943,35 +943,38 @@
     <div class="pagination"></div>
   </div>
   <form class="modal-buy-now-form">
-    <label class="modal-form-field">
+    <div class="modal-form-field">
       <span class="modal-by-now-form-input-desc">Personal information</span>
-      <span class="modal-form-input-wrap">
-        <input
-          type="text"
-          name="user-name"
-          placeholder="Name"
-          class="modal-buy-now-input"
-          pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-          minlength="2"
-          required
-        />
-        <input
-          type="text"
-          name="user-name"
-          placeholder="Surname"
-          class="modal-buy-now-input"
-          pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-          minlength="2"
-          required
-        />
-      </span>
-    </label>
+      <div class="modal-form-input-wrap">
+        <label>
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Name"
+            class="modal-buy-now-input"
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+            required
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Surname"
+            class="modal-buy-now-input"
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+            required
+          />
+        </label>
+      </div>
+    </div>
     <label class="modal-form-field">
       <span class="modal-by-now-form-input-desc">Email</span>
       <span class="modal-form-input-wrap">
         <input
           type="email"
-          id="email-user"
           placeholder="Enter your email"
           name="user-email"
           class="modal-buy-now-input"
@@ -984,7 +987,6 @@
       <span class="modal-form-input-wrap modal-buy-now-form-input-relative">
         <input
           type="tel"
-          id="user-phone"
           placeholder="Phone number"
           name="user-email"
           class="modal-buy-now-input modal-buy-now-input-phone"
@@ -1006,7 +1008,6 @@
           name="user-card"
           placeholder="Enter card"
           class="modal-buy-now-input modal-buy-now-input-master-card"
-          id="card-user"
           pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
           title="xxxx-xxxx-xxxx-xxxx"
           required
@@ -1021,7 +1022,6 @@
       <textarea
         name="user-message"
         placeholder="Enter text"
-        id="comment-user"
         class="modal-buy-now-comment-message"
       ></textarea>
     </label>
