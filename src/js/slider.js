@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 const reviewSwiper = new Swiper('.review-swiper', {
-  loop: true,
+  // loop: true,
 
   // autoplay: {
   //   delay: 2000,
@@ -35,7 +35,7 @@ const reviewSwiper = new Swiper('.review-swiper', {
 
 const productsSwiper = new Swiper('.products-swiper', {
   spaceBetween: 18,
-  loop: true,
+  // loop: true,
 
   // autoplay: {
   //   delay: 2000,
