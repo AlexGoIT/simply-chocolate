@@ -1,12 +1,8 @@
 /* Modal leave a review*/
 .modal-review {
-  position: absolute;
-  z-index: 110;
+  position: relative;
   min-height: 471px;
   width: 311px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: var(--body-background-color);
   border-radius: 15px;
   padding-left: 24px;

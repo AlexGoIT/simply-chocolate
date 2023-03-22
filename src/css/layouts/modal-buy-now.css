@@ -1,15 +1,12 @@
 /* Modal buy now */
 .modal-buy-now {
-  position: absolute;
-  z-index: 110;
+  position: relative;
+  top: 220px;
+  width: 311px;
+  min-height: 1007px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 311px;
-  min-height: 1007px;
-  top: 630px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: var(--body-background-color);
   border-radius: 15px;
   padding: 32px 24px;
@@ -18,11 +15,19 @@
 
 @media screen and (min-width: 768px) {
   .modal-buy-now {
+    top: 230px;
     width: 609px;
     min-height: 1058px;
     padding: 48px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .modal-buy-now {
+    top: 240px;
+  }
+}
+
 .modal-buy-now-btn-close {
   position: absolute;
   width: 24px;
@@ -34,6 +39,7 @@
   right: 14px;
   stroke: var(--icon-color-normal-light-theme);
 }
+
 @media screen and (min-width: 768px) {
   .modal-buy-now-btn-close {
     width: 28px;
