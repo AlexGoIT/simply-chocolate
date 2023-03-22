@@ -20,10 +20,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-da4740dd.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-162144c7.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-9354a994.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-cf65b557.css">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="header-container container">
   <nav class="header-navigation">
@@ -191,8 +191,8 @@
         <div class="buttons-wrap">
           <button
             type="button"
-            class="modal-button text-button js-open-modal"
-            data-modal="1"
+            class="modal-button text-button js-modal-open"
+            data-modal="modal-buy-now"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1200"
@@ -731,9 +731,9 @@
           <img src="/simply-chocolate/assets/2mob-f33fdc96.jpg" alt="Chocolate" />
         </picture>
         <button
-          class="sellers-btn js-open-modal"
+          class="sellers-btn js-modal-open"
           type="button"
-          data-modal="1"
+          data-modal="modal-buy-now"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
@@ -750,9 +750,9 @@
           <img src="/simply-chocolate/assets/3desk-ce8f8475.jpg" alt="Sweet" />
         </picture>
         <button
-          class="sellers-btn js-open-modal"
+          class="sellers-btn js-modal-open"
           type="button"
-          data-modal="1"
+          data-modal="modal-buy-now"
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
@@ -882,9 +882,9 @@
     </div>
   </div>
   <button
-    class="review-button js-open-modal"
+    class="review-button js-modal-open"
     type="button"
-    data-modal="2"
+    data-modal="modal-review"
     data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000"
@@ -911,9 +911,9 @@
       work of art that is sure to please.
     </p>
     <button
-      class="subscribe-btn js-open-modal"
+      class="subscribe-btn js-modal-open"
       type="button"
-      data-modal="3"
+      data-modal="modal-subscribe"
       data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000"
@@ -995,202 +995,205 @@
 </div>
 
     </footer>
-    <div class="overlay js-overlay-modal">
-      <div class="modal-buy-now modal-form" data-modal="1">
-  <button class="modal-buy-now-btn-close js-modal-close" type="button">
-    <svg width="24" height="24">
-      <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
-    </svg>
-  </button>
-  <h2 class="modal-buy-now-title">
-    Buy<span class="modal-buy-now-title-accent">&nbsp;now</span>
-  </h2>
-  <ul class="modal-buy-now-cards-list">
-    <li class="modal-buy-now-card-item">
-      <a href="" class="modal-buy-now-card-link">
-        <img
-          srcset="/simply-chocolate/assets/buy-now-desktop-1@2x-min-75fae25d.png "
-          src="/simply-chocolate/assets/buy-now-desktop-1-min-608b76a4.png"
-          alt="chocolate"
-          width="120"
-          height="107"
-        />
-      </a>
-      <p class="modal-buy-now-card-weight">100g</p>
-    </li>
-    <li class="modal-buy-now-card-item">
-      <a href="" class="modal-buy-now-card-link">
-        <img
-          srcset="/simply-chocolate/assets/buy-now-desktop-2@2x-min-d5067f2d.png "
-          src="/simply-chocolate/assets/buy-now-desktop-2-min-67e9956d.png"
-          alt="chocolate"
-          width="120"
-          height="107"
-        />
-      </a>
-      <p class="modal-buy-now-card-weight">200g</p>
-    </li>
-    <li class="modal-buy-now-card-item">
-      <a href="" class="modal-buy-now-card-link">
-        <img
-          srcset="/simply-chocolate/assets/buy-now-desktop-3@2x-min-e7248f1b.png "
-          src="/simply-chocolate/assets/buy-now-desktop-3-min-aa7d4998.png"
-          alt="chocolate"
-          width="120"
-          height="107"
-        />
-      </a>
-      <p class="modal-buy-now-card-weight">300g</p>
-    </li>
-  </ul>
-  <div class="pagination-wrap">
-    <div class="pagination-active"></div>
-    <div class="pagination"></div>
-    <div class="pagination"></div>
-  </div>
-  <form class="modal-buy-now-form">
-    <div class="modal-form-field">
-      <span class="modal-by-now-form-input-desc">Personal information</span>
-      <div class="modal-form-input-wrap">
-        <label>
-          <input
-            type="text"
-            name="user-name"
-            placeholder="Name"
-            class="modal-buy-now-input"
-            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-            minlength="2"
-            required
+      <div class="backdrop" id="modal-buy-now">
+  <div class="modal-buy-now">
+    <button class="modal-buy-now-btn-close js-modal-close" type="button">
+      <svg width="24" height="24">
+        <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy-now-title">
+      Buy<span class="modal-buy-now-title-accent">&nbsp;now</span>
+    </h2>
+    <ul class="modal-buy-now-cards-list">
+      <li class="modal-buy-now-card-item">
+        <a href="" class="modal-buy-now-card-link">
+          <img
+            srcset="/simply-chocolate/assets/buy-now-desktop-1@2x-min-75fae25d.png "
+            src="/simply-chocolate/assets/buy-now-desktop-1-min-608b76a4.png"
+            alt="chocolate"
+            width="120"
+            height="107"
           />
-        </label>
-        <label>
-          <input
-            type="text"
-            name="user-name"
-            placeholder="Surname"
-            class="modal-buy-now-input"
-            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-            minlength="2"
-            required
+        </a>
+        <p class="modal-buy-now-card-weight">100g</p>
+      </li>
+      <li class="modal-buy-now-card-item">
+        <a href="" class="modal-buy-now-card-link">
+          <img
+            srcset="/simply-chocolate/assets/buy-now-desktop-2@2x-min-d5067f2d.png "
+            src="/simply-chocolate/assets/buy-now-desktop-2-min-67e9956d.png"
+            alt="chocolate"
+            width="120"
+            height="107"
           />
-        </label>
-      </div>
+        </a>
+        <p class="modal-buy-now-card-weight">200g</p>
+      </li>
+      <li class="modal-buy-now-card-item">
+        <a href="" class="modal-buy-now-card-link">
+          <img
+            srcset="/simply-chocolate/assets/buy-now-desktop-3@2x-min-e7248f1b.png "
+            src="/simply-chocolate/assets/buy-now-desktop-3-min-aa7d4998.png"
+            alt="chocolate"
+            width="120"
+            height="107"
+          />
+        </a>
+        <p class="modal-buy-now-card-weight">300g</p>
+      </li>
+    </ul>
+    <div class="pagination-wrap">
+      <div class="pagination-active"></div>
+      <div class="pagination"></div>
+      <div class="pagination"></div>
     </div>
-    <label class="modal-form-field">
-      <span class="modal-by-now-form-input-desc">Email</span>
-      <span class="modal-form-input-wrap">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          name="user-email"
-          class="modal-buy-now-input"
-          required
-        />
-      </span>
-    </label>
-    <label class="modal-form-field">
-      <span class="modal-by-now-form-input-desc">Phone number</span>
-      <span class="modal-form-input-wrap modal-buy-now-form-input-relative">
+    <form class="modal-buy-now-form modal-form">
+      <div class="modal-form-field">
+        <span class="modal-by-now-form-input-desc">Personal information</span>
+        <div class="modal-form-input-wrap">
+          <label>
+            <input
+              type="text"
+              name="user-name"
+              placeholder="Name"
+              class="modal-buy-now-input"
+              pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+              minlength="2"
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              name="user-name"
+              placeholder="Surname"
+              class="modal-buy-now-input"
+              pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+              minlength="2"
+              required
+            />
+          </label>
+        </div>
+      </div>
+      <label class="modal-form-field">
+        <span class="modal-by-now-form-input-desc">Email</span>
+        <span class="modal-form-input-wrap">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="user-email"
+            class="modal-buy-now-input"
+            required
+          />
+        </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-by-now-form-input-desc">Phone number</span>
+        <span class="modal-form-input-wrap modal-buy-now-form-input-relative">
+          <input
+            type="tel"
+            placeholder="Phone number"
+            name="user-email"
+            class="modal-buy-now-input modal-buy-now-input-phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xx-xx"
+            required
+          />
+          <svg class="modal-buy-now-icon-tel">
+            <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-flag-ua"></use>
+          </svg>
+          <span class="modal-buy-now-phone-number">+380</span>
+        </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-by-now-form-input-desc">Card number</span>
+        <span class="modal-form-input-wrap modal-buy-now-form-input-relative">
+          <input
+            type="text"
+            name="user-card"
+            placeholder="Enter card"
+            class="modal-buy-now-input modal-buy-now-input-master-card"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            title="xxxx-xxxx-xxxx-xxxx"
+            required
+          />
+          <svg class="modal-buy-now-icon-master-card">
+            <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-mastercard"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-by-now-form-input-desc">Comment</span>
+        <textarea
+          name="user-message"
+          placeholder="Enter text"
+          class="modal-buy-now-comment-message"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-buy-now-btn-submit" data-modal="pop-up-thank-you">Submit</button>
+    </form>
+  </div>
+</div>
+
+      <div class="backdrop" id="modal-review">
+  <div class="modal-review">
+    <button class="modal-btn js-modal-close" type="button">
+      <svg width="24px" height="24px">
+        <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">
+      <span>leave a review</span>
+      <span>about <span class="akcent">our chocolate</span></span>
+    </h3>
+    <form class="modal-review-form modal-form">
+      <input
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        id="name-label"
+        class="modal-input"
+        required
+        pattern="[a-zA-ZА-Яа-я]+"
+        minlength="2"
+      />
+      <input
+        type="text"
+        id="email-user"
+        placeholder="Enter your email"
+        name="user-email"
+        required
+        class="modal-input"
+      />
+      <div class="modal-form-input-wrapper">
         <input
           type="tel"
+          name="user-phone"
+          required
           placeholder="Phone number"
-          name="user-email"
-          class="modal-buy-now-input modal-buy-now-input-phone"
+          class="modal-input-phone modal-input"
+          id="phone-user"
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}"
           title="xxx-xx-xx"
-          required
         />
-        <svg class="modal-buy-now-icon-tel">
-          <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-flag-ua"></use>
-        </svg>
-        <span class="modal-buy-now-phone-number">+380</span>
-      </span>
-    </label>
-    <label class="modal-form-field">
-      <span class="modal-by-now-form-input-desc">Card number</span>
-      <span class="modal-form-input-wrap modal-buy-now-form-input-relative">
-        <input
-          type="text"
-          name="user-card"
-          placeholder="Enter card"
-          class="modal-buy-now-input modal-buy-now-input-master-card"
-          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-          title="xxxx-xxxx-xxxx-xxxx"
-          required
-        />
-        <svg class="modal-buy-now-icon-master-card">
-          <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-mastercard"></use>
-        </svg>
-      </span>
-    </label>
-    <label class="modal-form-field">
-      <span class="modal-by-now-form-input-desc">Comment</span>
+        <svg width="23.69px" height="17.63px" class="modal-form-icon">
+          <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-flag-ua"></use></svg
+        ><span class="phone-number">+380</span>
+      </div>
       <textarea
         name="user-message"
         placeholder="Enter text"
-        class="modal-buy-now-comment-message"
+        id="comment-user"
+        class="comment-message"
       ></textarea>
-    </label>
-    <button type="submit" class="modal-buy-now-btn-submit">Submit</button>
-  </form>
+      <button type="submit" class="modal-form-submit js-open-modal" data-modal="pop-up-feedback">Send</button>
+    </form>
+  </div>
 </div>
 
-      <div class="modal-review modal-form" data-modal="2">
-  <button class="modal-btn js-modal-close" type="button">
-    <svg width="24px" height="24px">
-      <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
-    </svg>
-  </button>
-  <h3 class="modal-title">
-    <span>leave a review</span>
-    <span>about <span class="akcent">our chocolate</span></span>
-  </h3>
-  <form class="modal-review-form">
-    <input
-      type="text"
-      name="user-name"
-      placeholder="Name"
-      id="name-label"
-      class="modal-input"
-      required
-      pattern="[a-zA-ZА-Яа-я]+"
-      minlength="2"
-    />
-    <input
-      type="text"
-      id="email-user"
-      placeholder="Enter your email"
-      name="user-email"
-      required
-      class="modal-input"
-    />
-    <div class="modal-form-input-wrapper">
-      <input
-        type="tel"
-        name="user-phone"
-        required
-        placeholder="Phone number"
-        class="modal-input-phone modal-input"
-        id="phone-user"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-        title="xxx-xxx-xx-xx"
-      />
-      <svg width="23.69px" height="17.63px" class="modal-form-icon">
-        <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-flag-ua"></use></svg
-      ><span class="phone-number">+380</span>
-    </div>
-    <textarea
-      name="user-message"
-      placeholder="Enter text"
-      id="comment-user"
-      class="comment-message"
-    ></textarea>
-    <button type="submit" class="modal-form-submit">Send</button>
-  </form>
-</div>
-
-      
-  <div class="thx modal-form" data-modal="3">
+      <div class="backdrop" id="modal-subscribe">
+  <div class="thx">
     <button class="close-thx js-modal-close" type="button">
       <svg class="close-thx-icon">
         <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
@@ -1218,7 +1221,7 @@
       </h3>
 
       <div class="thx-email">
-        <form class="thx-form">
+        <form class="thx-form modal-form">
           <input
             class="thx-input"
             type="email"
@@ -1233,10 +1236,10 @@
       </div>
     </div>
   </div>
-
-      <div class="popup-thankyou20-section modal-form" data-modal="4">
+</div>
+      <div class="backdrop" id="pop-up-thank-you">
   <div class="pop-ups">
-    <button class="btn-pop-ups js-modal-close">
+    <button class="btn-pop-ups js-modal-close" type="button">
       <svg class="svg-pop-ups" width="16" height="16">
         <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
       </svg>
@@ -1267,33 +1270,35 @@
   </div>
 </div>
 
-      <div class="popup-feedback-section modal-form" data-modal="5">
-  <div class="pop-up">
-    <button class="btn-pop-up js-modal-close">
-      <svg class="svg-pop-up" width="16" height="16">
-        <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
-      </svg>
-    </button>
-    <div class="container-features">
-      <h2 class="container-title">thank you for your feedback!</h2>
-      <p class="text-container">We are so happy to hear from you!</p>
+      <div class="backdrop" id="pop-up-feedback">
+  <div class="popup-feedback">
+    <div class="pop-up">
+      <button class="btn-pop-up js-modal-close">
+        <svg class="svg-pop-up" width="16" height="16">
+          <use href="/simply-chocolate/assets/icons-f7f584ae.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <div class="container-features">
+        <h2 class="container-title">thank you for your feedback!</h2>
+        <p class="text-container">We are so happy to hear from you!</p>
+      </div>
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png , /simply-chocolate/assets/ezgif-1-2d3a67b8802x-30e90fe0.png "
+        />
+        <source
+          media="(min-width:375px)"
+          srcset="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png , /simply-chocolate/assets/ezgif-1-2d3a67b8802x-30e90fe0.png "
+        />
+        <img
+          src="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png"
+          alt="chocolate"
+          style="width: auto"
+          class="img-popup-mobile"
+        />
+      </picture>
     </div>
-    <picture>
-      <source
-        media="(min-width:768px)"
-        srcset="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png , /simply-chocolate/assets/ezgif-1-2d3a67b8802x-30e90fe0.png "
-      />
-      <source
-        media="(min-width:375px)"
-        srcset="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png , /simply-chocolate/assets/ezgif-1-2d3a67b8802x-30e90fe0.png "
-      />
-      <img
-        src="/simply-chocolate/assets/ezgif-1-2d3a67b880-8712d9a7.png"
-        alt="chocolate"
-        style="width: auto"
-        class="img-popup-mobile"
-      />
-    </picture>
   </div>
 </div>
 
