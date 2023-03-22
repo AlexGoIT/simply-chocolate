@@ -11,7 +11,7 @@ if (modalBtns.length > 0) {
     const modalBtn = modalBtns[index];
     modalBtn.addEventListener('click', function (e) {
       const modalName = modalBtn.getAttribute('data-modal');
-      const curentModal = document.getElementById(modalName);
+      const curentModal = document.getElementById(modalName);      
       modalOpen(curentModal);
     });
   }
@@ -38,7 +38,7 @@ function modalOpen(curentModal) {
     curentModal.classList.add('is-open');
     curentModal.addEventListener('click', function (e) {
       if (!e.target.closest('.modal')) {
-        modalClose(e.target.closest('.backdrop'));
+        //modalClose(e.target.closest('.backdrop'));
       }
     });
   }

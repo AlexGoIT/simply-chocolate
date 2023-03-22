@@ -1,9 +1,9 @@
 /* Modal buy now */
 .modal-buy-now {
-  width: 311px;
-  min-height: 1007px;
   position: relative;
   top: 220px;
+  width: 311px;
+  min-height: 1007px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -10,26 +10,12 @@
 }
 
 .backdrop {
-  z-index: 101;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: scroll;
-  background-color: rgba(92, 92, 92, 0.233);
-  transition: opacity var(--timing-function),
-    visibility var(--timing-function);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 101;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +23,10 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  background-color: rgba(92, 92, 92, 0.233);
+  transition: opacity var(--timing-function),
+    visibility var(--timing-function);
+  
 }
 
 .backdrop.is-open {
@@ -47,23 +37,6 @@
 
 .lock {
   overflow: hidden;
-}
-
-.modal-form {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-form.active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
 }
 
 @media screen and (min-width: 375px) {
