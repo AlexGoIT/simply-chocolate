@@ -91,7 +91,7 @@
   border-radius: 13px;
   transform: translateY(calc(100% + 1px));
   display: block;
-  transition: transform 250ms linear;
+  transition: transform 500ms ease-in-out;
   overflow: hidden;
 }
 .overlay-title {

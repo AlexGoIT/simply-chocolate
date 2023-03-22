@@ -3,10 +3,10 @@ import Swiper from 'swiper/bundle';
 const reviewSwiper = new Swiper('.review-swiper', {
   loop: true,
 
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
 
   // If we need pagination
   pagination: {
@@ -37,10 +37,10 @@ const productsSwiper = new Swiper('.products-swiper', {
   spaceBetween: 18,
   loop: true,
 
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
 
   // If we need pagination
   pagination: {
