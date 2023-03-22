@@ -6,6 +6,7 @@
 }
 
 .box1 {
+  position: relative;
   padding-top: 395px;
   min-height: 620px;
   border-radius: 30px;
@@ -24,6 +25,42 @@
   padding-right: 10px;
 
 
+}
+
+.hero-decor{
+  position: absolute;
+  top: 174px;
+  right: 0;
+  transition: 1s var(--timing-function);
+}
+.hero-decor-img{
+  width: 98px;
+  height: 127px;
+
+}
+@media screen and (min-width: 768px){
+  .hero-decor{ 
+    top: 236px;
+    right: 9px;
+  }
+  .hero-decor-img{
+    width: 150px;
+    height: 192px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .hero-decor{ 
+    top: 139px;
+    right: 184px;
+  }
+  .hero-decor-img{
+    width: 131px;
+    height: 168px;
+  
+  }
+}
+.hero-decor:hover{
+  transform: scale(1.1);
 }
 
 .paragraph-hero {
