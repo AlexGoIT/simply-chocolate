@@ -28,8 +28,7 @@
   display: flex;
   flex-direction: column;
   width: 255px;
-  height: 48px;
-  font-family: 'Montserrat', sans-serif;
+  height: 48px;  
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -43,56 +42,37 @@
   color: var(--icon-color-active);
 }
 
-.comment-message ::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: var(--secondary-text-color-light-theme);
-}
 .modal-review-form {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
 .modal-input {
-  border-radius: 8px;
+  border-radius: 13px;
   width: 100%;
   height: 45px;
-  padding-left: 18px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
+  padding-left: 18px; 
   display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: var(--secondary-text-color-light-theme);
+  align-items: center;  
+  color: var(--text-color-light-theme);
   background-color: transparent;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border: 1.5px solid var(--dark-grey);  
+}
+.modal-input:focus { 
+  border-color: var(--orange);
+  background-color: #fff;
+}
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
+}
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
 }
 .modal-input-phone {
   padding-left: 106px;
 }
-.modal-input::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
 .modal-form-submit {
   align-self: flex-start;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
   line-height: 1.2;
   border: none;
   display: flex;
@@ -117,10 +97,14 @@
   height: 91px;
   background-color: transparent;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 8px 16px;  
   resize: none;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+}
+.comment-message:focus { 
+  border-color: var(--orange);
+  background-color: #fff;
 }
 .modal-form-input-wrapper {
   position: relative;
@@ -135,9 +119,6 @@
   top: 50%;
   left: 48px;
   transform: translate(0, -50%);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.2px;
   letter-spacing: -0.02em;
   color: #000000;
@@ -171,7 +152,6 @@
   }
   .modal-title {
     display: block;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
@@ -183,41 +163,15 @@
     height: 56px;
   }
   .modal-input {
-    border-radius: 8px;
-    width: 100%;
+    border-radius: 8px;  
     height: 66px;
-    padding-left: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: var(--secondary-text-color-light-theme);
-    background-color: transparent;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    padding-left: 24px; 
+    font-size: 18px;  
   }
-  .comment-message {
-    background-color: transparent;
-    width: 100%;
+  .comment-message { 
     height: 137px;
-    border-radius: 8px;
     padding: 24px 24px;
-    resize: none;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
-  }
-  .comment-message ::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: -0.02em;
-    display: flex;
-    align-items: center;
-    color: rgba(64, 64, 64, 0.3);
   }
   .modal-input-phone {
     padding-left: 177px;
@@ -231,7 +185,6 @@
     top: 50%;
     left: 48px;
     transform: translate(0, -50%);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -245,15 +198,5 @@
     top: 50%;
     left: 24px;
     transform: translate(0, -50%);
-  }
-  .modal-input::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
   }
 }

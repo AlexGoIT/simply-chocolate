@@ -2,7 +2,7 @@
   width: 311px;
   position: relative;
   border-radius: 15px 15px 15px 15px;
-  background-color: var(--bg-color-light);
+  background-color: var(--body-background-color);
 }
 
 .close-thx {
@@ -24,6 +24,11 @@
   stroke: var(--icon-color-normal-dark-theme);
 }
 
+.close-thx-icon:hover,
+.close-thx-icon:focus{
+  stroke: var(--orange);
+}
+
 .thx-img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -34,8 +39,6 @@
 }
 
 .thx-text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -53,10 +56,22 @@
 }
 
 .thx-input {
-  height: 40px;
+  width: 263px;
+  height: 45px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 20px;
-  padding-left: 18px;
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  padding-left: 18px;  
+}
+.thx-input:focus {
+  border-color: var(--orange);
+  background-color: #fff;
+}
+.thx-input:not(:focus):not(:placeholder-shown):valid {
+  border-color: green;
+}
+.thx-input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
 }
 
 .thx-btn {
@@ -67,7 +82,7 @@
   background: var(--icon-color-active);
   color: var(--bg-color-light);
   width: 100px;
-  height: 40px;
+  height: 45px;
   border-radius: 20px;
 }
 
@@ -101,10 +116,11 @@
   }
 
   .thx-input {
-    width: 311px;
-    height: 52px;
-    border-radius: 26px;
+    width: 313px;
+    height: 52px; 
+    border-radius: 30px;
     padding-left: 24px;
+    font-size: 18px;     
   }
 
   .thx-btn {
