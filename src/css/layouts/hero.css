@@ -12,9 +12,11 @@
   font-size: 40px;
   color: var(--text-color-dark-theme);
   text-align: center;
-  background-image: linear-gradient(180deg,
+  background-image: linear-gradient(
+      180deg,
       rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%),
+      rgba(17, 17, 17, 0.4) 100%
+    ),
     url('../../images/hero/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -22,8 +24,6 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 10px;
-
-
 }
 
 .paragraph-hero {
@@ -100,7 +100,7 @@
 
 .scroll-link:hover .scroll-paragraph,
 .scroll-link:focus .scroll-paragraph {
-  color: var(--button-font-active-light-theme)
+  color: var(--button-font-active-light-theme);
 }
 
 .scroll-link:hover .icon-wrap,
@@ -112,7 +112,6 @@
 .scroll-link:focus .hero-icon {
   fill: var(--icon-color-normal-dark-theme);
 }
-
 
 .scroll-paragraph {
   font-weight: 500;
@@ -136,39 +135,40 @@
   fill: var(--button-font-active-light-theme);
 }
 
-
-
 @media screen and (max-width: 767px) {
   .box1 {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url('../../images/hero/hero-mobile.jpg');
-
-
   }
 
-
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .box1 {
-      background-image: linear-gradient(180deg,
+      background-image: linear-gradient(
+          180deg,
           rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%),
+          rgba(17, 17, 17, 0.4) 100%
+        ),
         url('../../images/hero/hero-mobile@2x.jpg');
     }
   }
-
 }
 
 /*----tablet version----*/
 @media screen and (min-width: 768px) {
   .box1 {
     min-height: 704px;
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%), url('../../images/hero/hero-tablet.jpg');
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../../images/hero/hero-tablet.jpg');
     padding-top: 671px;
     padding-left: 40px;
     padding-right: 40px;
@@ -178,7 +178,6 @@
   .paragraph-hero {
     font-size: 28px;
     max-width: 484px;
-
   }
 
   .paragraph-hero > br {
@@ -188,7 +187,6 @@
   .wrapper {
     flex-direction: row;
     align-items: baseline;
-
   }
 
   .text-button {
@@ -210,35 +208,41 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .box1 {
-      background-image: linear-gradient(180deg,
+      background-image: linear-gradient(
+          180deg,
           rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%),
+          rgba(17, 17, 17, 0.4) 100%
+        ),
         url('../../images/hero/hero-tablet@2x.jpg');
     }
   }
-
 }
 
 /*---desktop version---*/
 @media screen and (min-width: 1200px) {
   .box1 {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%), url('../../images/hero/hero-desktop.jpg');
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../../images/hero/hero-desktop.jpg');
     padding-top: 381px;
     min-height: 600px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     .box1 {
-      background-image: linear-gradient(180deg,
+      background-image: linear-gradient(
+          180deg,
           rgba(17, 17, 17, 0) 0%,
-          rgba(17, 17, 17, 0.4) 100%),
+          rgba(17, 17, 17, 0.4) 100%
+        ),
         url('../../images/hero/hero-desktop@2x.jpg');
     }
   }
