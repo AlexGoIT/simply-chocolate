@@ -1,5 +1,5 @@
 /* Header styles */
-.header{
+.header {
   position: sticky;
   top: 0;
   z-index: 99;
@@ -91,14 +91,14 @@
 }
 .social-icon-desktop-tablet,
 .social-mobile-icon {
-  fill: none; 
+  fill: none;
 }
 .social-icon-desktop-tablet {
   stroke: var(--black);
   stroke-width: 2.666px;
 }
-.social-list-link{
-display: block;
+.social-list-link {
+  display: block;
 }
 .social-icon-desktop-tablet:hover,
 .social-list-link:focus > .social-icon-desktop-tablet {

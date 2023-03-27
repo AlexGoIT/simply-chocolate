@@ -1,6 +1,4 @@
 /* General styles */
-@import 'swiper/css';
-
 .section {
   padding-top: 72px;
 }
@@ -24,9 +22,7 @@
   visibility: hidden;
   pointer-events: none;
   background-color: rgba(92, 92, 92, 0.233);
-  transition: opacity var(--timing-function),
-    visibility var(--timing-function);
-  
+  transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 .backdrop.is-open {
@@ -80,14 +76,14 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-::placeholder{
-  line-height: 1.21; 
+::placeholder {
+  line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   background-color: transparent;
 }
-@media screen and (min-width: 768px){
-  ::placeholder{
+@media screen and (min-width: 768px) {
+  ::placeholder {
     font-size: 18px;
   }
 }

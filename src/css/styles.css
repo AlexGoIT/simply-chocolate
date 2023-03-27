@@ -2,6 +2,7 @@
 @import url('./base/reset.css');
 @import url('./base/general.css');
 /* Sections styles */
+@import 'swiper/css';
 @import url('./layouts/header.css');
 @import url('./layouts/mobile-menu.css');
 @import url('./layouts/components.css');
